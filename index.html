@@ -1,0 +1,43 @@
+<!doctytpe html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PorteFolio | Dewulf Mael</title>
+    <link href="Stylecheet/style.css"> 
+</head>
+<body>
+    <header class="header">
+        <input id="trigger-menu" type="checkbox">
+
+        <div id="ctn-header-cta">
+            <i class="fa-solid fa-moon"></i>
+            <i id="open-menu" class="fa-solid fa-bars" onclick="TriggerMenu()"></i>
+        </div>
+
+        <ul>
+            <li class="link-menu">Accueil</li>
+            <li class="link-menu">Entreprise</li>
+            <li class="link-menu">Projet</li>
+            <li class="link-menu">Veille technologique</li>
+            <li class="link-menu">Réseau / Contact</li>
+            <li onclick="TriggerMenu()"><i id="close-menu" class="fa-solid fa-caret-up"></i></li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        function TriggerMenu()
+        {
+            let trigger = $("#trigger-menu");
+
+            if(trigger.is(":checked"))
+                trigger.prop("checked", false);
+            else
+                trigger.prop("checked", true);
+
+            console.log(trigger.is(":checked"));
+        }
+    </script>
+
+</body>
+</html>
