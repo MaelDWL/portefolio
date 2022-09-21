@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background: #2f3542;
+}
+
+.header > #trigger-menu {
+  display: none;
+  position: absolute;
+}
+.header > #trigger-menu:checked ~ ul {
+  height: 272px;
+  border-bottom: solid 1px #747d8c;
+  transition: 0.3s;
+}
+.header #ctn-header-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header #ctn-header-cta > .fa-solid {
+  margin: 10px;
+  padding: 10px;
+  background: #2f3542;
+  color: #fff;
+  border: solid 1px #57606f;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header #ctn-header-cta > .fa-solid:hover {
+  border: solid 1px #fff;
+  transition: 0.3s;
+}
+.header > ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  background: #57606f;
+  border-bottom: solid 0 #747d8c;
+  list-style: none;
+  transition: 0.3s;
+}
+.header > ul > .link-menu {
+  width: fit-content;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header > ul > .link-menu:first-child {
+  margin-top: 10px;
+}
+.header > ul > .link-menu:after {
+  content: "";
+  display: block;
+  width: 0;
+  margin: auto;
+  border-bottom: solid 2px #ff7f50;
+  transition: 0.3s;
+}
+.header > ul > .link-menu:hover {
+  color: #ff7f50;
+}
+.header > ul > .link-menu:hover:after {
+  width: 100%;
+  transition: 0.3s;
+}
+.header > ul > li > #close-menu {
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* [640px -> 767] */
+/* [768px -> 1023] */
+/* [1024 -> infinite] */
+
+/*# sourceMappingURL=style.css.map */
