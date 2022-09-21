@@ -1,13 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+.blue {
+  color: #0984e3;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
 body {
+  min-width: 305px;
   padding: 0;
   margin: 0;
   background: #2f3542;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .header > #trigger-menu {
-  display: none;
   position: absolute;
+  display: none;
 }
 .header > #trigger-menu:checked ~ ul {
   height: 272px;
@@ -37,6 +64,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -67,11 +95,11 @@ body {
   display: block;
   width: 0;
   margin: auto;
-  border-bottom: solid 2px #ff7f50;
+  border-bottom: solid 2px #0984e3;
   transition: 0.3s;
 }
 .header > ul > .link-menu:hover {
-  color: #ff7f50;
+  color: #0984e3;
 }
 .header > ul > .link-menu:hover:after {
   width: 100%;
@@ -84,7 +112,122 @@ body {
 }
 
 /* [640px -> 767] */
+@media only screen and (min-width: 640px) {
+  .header > #trigger-menu:checked ~ ul {
+    height: auto;
+    border-bottom: none;
+  }
+  .header > ul {
+    position: relative;
+    overflow: auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 8px 0;
+    background: #57606f;
+    border-bottom: solid 0 #747d8c;
+    list-style: none;
+    transition: 0.3s;
+  }
+  .header > ul > .link-menu {
+    padding: 10px;
+    text-align: center;
+  }
+  .header > ul > .link-menu:first-child {
+    margin-top: 0;
+  }
+  .header > ul > li:last-child {
+    position: absolute;
+    display: none;
+  }
+}
 /* [768px -> 1023] */
 /* [1024 -> infinite] */
+.btn {
+  padding: 10px 20px;
+  background: #0984e3;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #74b9ff;
+  transition: 0.3s;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 4px solid #0984e3;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.ctn-typewriter {
+  width: fit-content;
+}
+
+#home {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+#home > .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+#home > .presentation > .ctn-profil-picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 150px;
+  max-height: 200px;
+  padding: 30px;
+}
+#home > .presentation > .ctn-profil-picture:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-top: solid 4px #0984e3;
+  border-left: solid 4px #0984e3;
+}
+#home > .presentation > .ctn-profil-picture:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: solid 4px #0984e3;
+  border-right: solid 4px #0984e3;
+}
+#home > .presentation > .ctn-profil-description {
+  width: 100%;
+}
+#home > .presentation > .ctn-profil-description .bold {
+  font-size: 1.2rem;
+}
+
+/* [768px -> 1023] */
+@media only screen and (min-width: 640px) {
+  #home > .presentation {
+    flex-direction: row;
+  }
+  #home > .presentation > .ctn-profil-description {
+    padding-left: 40px;
+  }
+  #home > .presentation > .ctn-profil-description > p:first-child {
+    margin-top: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
