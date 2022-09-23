@@ -1,0 +1,37 @@
+{
+    "/acceuil":
+    {
+        "controller": "main", 
+        "action": "accueil"
+    },
+    
+    "/entreprise":
+    {
+        "controller": "main", 
+        "action": "entreprise"
+    },
+    
+    "/réalisations_professionelles":
+    {
+        "controller": "main", 
+        "action": "realisations_professionelles"
+    },
+
+    "/veille_technologique":
+    {
+        "controller": "main", 
+        "action": "veille_technologique"
+    },
+
+    "/contact":
+    {
+        "controller": "main", 
+        "action": "contact"
+    },
+    
+    "/404":
+    {
+        "controller": "error", 
+        "action": "error 404"
+    }
+}
