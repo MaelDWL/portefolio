@@ -47,14 +47,12 @@ if(empty($road[$uri]) || empty($road[$uri]["controller"]) || empty($road[$uri]["
     else
         die();
 
-$controller        = ucfirst(strtolower($road[$uri]["controller"]));
-$action            = strtolower($road[$uri]["action"]);
-$controllerFile = "Controller/" . $controller . ".controller.php";
+$controller         = ucfirst(strtolower($road[$uri]["controller"]));
+$action             = strtolower($road[$uri]["action"]);
+$controllerFile     = "Controller/" . $controller . ".controller.php";
 
-var_dump($controller);
 if(!file_exists($controllerFile))
     die("Le controller " . $controllerFile . " n'existe pas");
-
 
 include $controllerFile;
 

@@ -2,9 +2,7 @@
 
 namespace App\Controller; 
 
-//use App\Core\View;
-
-include "Core/View.class.php";
+use App\Core\View;
 
 class Main 
 {

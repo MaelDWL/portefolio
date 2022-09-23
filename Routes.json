@@ -1,5 +1,5 @@
 {
-    "/acceuil":
+    "/accueil":
     {
         "controller": "main", 
         "action": "accueil"
@@ -11,10 +11,10 @@
         "action": "entreprise"
     },
     
-    "/réalisations_professionelles":
+    "/realisations_professionnelles":
     {
         "controller": "main", 
-        "action": "realisations_professionelles"
+        "action": "realisations_professionnelles"
     },
 
     "/veille_technologique":
