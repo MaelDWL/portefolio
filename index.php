@@ -4,7 +4,7 @@ namespace App;
 
 session_start();
 
-require_once "Config/arcanic_factory.ini.php";
+require_once "Config/portefolio.ini.php";
 
 /**********************************
  * AUTOLOADER
@@ -51,6 +51,7 @@ $controller        = ucfirst(strtolower($road[$uri]["controller"]));
 $action            = strtolower($road[$uri]["action"]);
 $controllerFile = "Controller/" . $controller . ".controller.php";
 
+var_dump($controller);
 if(!file_exists($controllerFile))
     die("Le controller " . $controllerFile . " n'existe pas");
 

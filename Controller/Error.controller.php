@@ -2,13 +2,14 @@
 
 namespace App\Controller; 
 
-use App\Core\View;
+//use App\Core\View;
+include "Core/View.class.php";
 
-class main 
+class Error 
 {
     public function error404() 
     {
-        $view = new View("404","front") 
+        $view = new View("404","front");
     }
 
 }

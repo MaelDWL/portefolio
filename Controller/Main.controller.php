@@ -2,9 +2,11 @@
 
 namespace App\Controller; 
 
-use App\Core\View;
+//use App\Core\View;
 
-class main 
+include "Core/View.class.php";
+
+class Main 
 {
     public function accueil() 
     {
