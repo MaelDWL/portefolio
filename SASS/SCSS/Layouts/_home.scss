@@ -1,0 +1,91 @@
+@use "../Abstracts" as *;
+
+#home
+{
+	color: $white;
+	font-family: $montserrat;
+
+	& > .presentation
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding: 0 20px;
+
+		& > .ctn-profil-picture
+		{
+			position: relative;
+
+			display: flex;
+			justify-content: center;
+			align-content: center;
+
+			max-width: 150px;
+			max-height: 200px;
+
+			padding: 30px;
+
+			&:before
+			{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				display: block;
+
+				width: 50px;
+				height: 50px;
+
+				border-top: solid 4px $blue;
+				border-left: solid 4px $blue;
+			}
+
+			&:after
+			{
+				content: "";
+				position: absolute;
+				bottom: 0;
+				right: 0;
+
+				display: block;
+
+				width: 50px;
+				height: 50px;
+
+				border-bottom: solid 4px $blue;
+				border-right: solid 4px $blue;
+			}
+		}
+
+		& > .ctn-profil-description
+		{
+			width: 100%;
+
+			& .bold
+			{
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+/* [768px -> 1023] */
+@media only screen and (min-width: 640px)
+{
+	#home > .presentation
+	{
+		flex-direction: row;
+
+		& > .ctn-profil-description
+		{
+			padding-left: 40px;
+
+			& > p:first-child
+			{
+				margin-top: 0;
+			}
+		}
+	}
+}

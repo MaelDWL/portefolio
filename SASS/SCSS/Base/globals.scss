@@ -2,8 +2,15 @@
 
 body
 {
+    min-width: 305px;
+
     padding: 0;
     margin: 0;
 
     background: $black;
+}
+
+.bold
+{
+    font-weight: bold;
 }

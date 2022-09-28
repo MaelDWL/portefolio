@@ -4,8 +4,8 @@
 {
     & > #trigger-menu
     {
-        display: none;
         position: absolute;
+        display: none;
 
         &:checked ~ ul
         {
@@ -50,6 +50,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 1;
         overflow: hidden;
 
         display: flex;
@@ -77,7 +78,7 @@
             font-size: 1.2rem;
             font-family: $montserrat;
             font-weight: 600;
-            text-decoration:none;
+            text-decoration: none;
 
             cursor: pointer;
 
@@ -94,13 +95,13 @@
                 width: 0;
                 margin: auto;
 
-                border-bottom: solid 2px $orange;
+                border-bottom: solid 2px $blue;
                 transition: .3s;
             }
 
             &:hover
             {
-                color: $orange;
+                color: $blue;
 
                 &:after
                 {
@@ -124,7 +125,54 @@
 /* [640px -> 767] */
 @media only screen and (min-width: 640px)
 {
+    .header
+    {
+        & > #trigger-menu
+        {
+            &:checked ~ ul
+            {
+                height: auto;
 
+                border-bottom: none;
+            }
+        }
+        & > ul
+        {
+            position: relative;
+            overflow: auto;
+
+            flex-direction: row;
+            justify-content: center;
+
+            width: 100%;
+            height: fit-content;
+            padding: 8px 0;
+
+            background: $light-black;
+            border-bottom: solid 0 $grey;
+
+            list-style: none;
+            transition: .3s;
+
+            & > .link-menu
+            {
+                padding: 10px;
+
+                text-align: center;
+
+                &:first-child
+                {
+                    margin-top: 0;
+                }
+            }
+
+            & > li:last-child
+            {
+                position: absolute;
+                display: none;
+            }
+        }
+    }
 }
 
 /* [768px -> 1023] */

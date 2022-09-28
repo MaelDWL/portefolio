@@ -1,0 +1,17 @@
+@use "../Abstracts" as *;
+
+.typewriter
+{
+	overflow: hidden;
+
+	border-right: 4px solid $blue;
+
+	white-space: nowrap;
+
+	animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.ctn-typewriter
+{
+	width: fit-content;
+}

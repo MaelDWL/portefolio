@@ -1,0 +1,20 @@
+@use "../Abstracts" as *;
+
+.btn
+{
+	padding: 10px 20px;
+
+	background: $blue;
+	color: $white;
+	border: none;
+	border-radius: 25px;
+
+	transition: .3s;
+	cursor: pointer;
+
+	&:hover
+	{
+		background: $light-blue;
+		transition: .3s;
+	}
+}
