@@ -27,11 +27,11 @@
         <input id="trigger-menu" type="checkbox">
 
         <ul>
-            <li class="link-menu">Accueil</li>
-            <li class="link-menu">Entreprise</li>
-            <li class="link-menu">Réalisations Professionelles</li>
-            <li class="link-menu">Veille technologique</li>
-            <li class="link-menu">Contact</li>
+            <a href="accueil" class="link-menu">Accueil</a>
+            <a href="entreprise" class="link-menu">Entreprise</a>
+            <a href="realisation_professionelles" class="link-menu">Réalisations Professionelles</a>
+            <a href="veille_technologique" class="link-menu">Veille technologique</a>
+            <a href="contact" class="link-menu">Contact</a>
             <li onclick="TriggerMenu()"><i id="close-menu" class="fa-solid fa-caret-up"></i></li>
         </ul>
 

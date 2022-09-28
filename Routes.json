@@ -1,4 +1,10 @@
 {
+    "/":
+    {
+        "controller": "main", 
+        "action": "accueil"
+    },
+
     "/accueil":
     {
         "controller": "main", 
@@ -11,10 +17,10 @@
         "action": "entreprise"
     },
     
-    "/realisations_professionnelles":
+    "/realisations_professionelles":
     {
         "controller": "main", 
-        "action": "realisations_professionnelles"
+        "action": "realisations_professionelles"
     },
 
     "/veille_technologique":
