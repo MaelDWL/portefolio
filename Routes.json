@@ -35,6 +35,19 @@
         "action": "contact"
     },
     
+    "/a_propos":
+    {
+        "controller": "main", 
+        "action": "a_propos"
+    },
+   
+   
+   
+   
+   
+   
+   
+   
     "/404":
     {
         "controller": "error", 

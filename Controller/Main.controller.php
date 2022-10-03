@@ -31,5 +31,9 @@ class Main
         $view = new View("contact","front");
     }
 
+    public function a_propos() 
+    {
+        $view = new View("a_propos","front");
+    }
 }
 

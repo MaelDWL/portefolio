@@ -14,7 +14,7 @@
                 Vous trouverez ici mes projets au sein de l'école et de l'entreprise mais aussi d'autres informations me concernant.
             </p>
 
-            <button class="btn">Plus d'informations</button>
+            <a class="btn" href="a_propos">Plus d'informations</a>
         </div>
     </section>
 </main>
