@@ -35,11 +35,11 @@ if ($offset)
 
 $_SESSION["uri"] = $uri;
 
-if(!file_exists(roadFilename)){
-    die("Le fichier " . roadFilename . " n'existe pas");
+if(!file_exists(__ROAD_FILE__)){
+    die("Le fichier " . __ROAD_FILE__ . " n'existe pas");
 }
 
-$road = json_decode(file_get_contents(roadFilename), true);
+$road = json_decode(file_get_contents(__ROAD_FILE__), true);
 
 if(empty($road[$uri]) || empty($road[$uri]["controller"]) || empty($road[$uri]["action"]))
     if($uri != "/404")

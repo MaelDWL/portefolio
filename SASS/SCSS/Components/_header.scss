@@ -142,7 +142,7 @@
             overflow: auto;
 
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-evenly;
 
             width: 100%;
             height: fit-content;
@@ -167,6 +167,15 @@
             }
 
             & > li:last-child
+            {
+                position: absolute;
+                display: none;
+            }
+        }
+
+        & > #ctn-header-cta
+        {
+            & > #open-menu
             {
                 position: absolute;
                 display: none;

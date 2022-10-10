@@ -3,15 +3,12 @@
 #home
 {
 	color: $white;
-	font-family: $montserrat;
 
 	& > .presentation
 	{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		padding: 0 20px;
 
 		& > .ctn-profil-picture
 		{
@@ -62,6 +59,13 @@
 		& > .ctn-profil-description
 		{
 			width: 100%;
+
+			& > a
+			{
+				display: inline-flex;
+				margin-top: 20px;
+				font-weight: bold;
+			}
 
 			& .bold
 			{

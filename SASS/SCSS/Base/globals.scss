@@ -10,7 +10,23 @@ body
     background: $black;
 }
 
+.main-content
+{
+    padding: 0 20px;
+
+    font-family: $montserrat;
+}
+
 .bold
 {
     font-weight: bold;
+}
+
+/* [768px -> 1023] */
+@media only screen and (min-width: 640px)
+{
+    .main-content
+    {
+        padding: 0 15%;
+    }
 }
