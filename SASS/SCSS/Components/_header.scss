@@ -185,10 +185,13 @@
     .header
     {
         top: 90px;
-        z-index: -1;
+
+        background: none;
 
         & > #ctn-header-cta
         {
+            position: relative;
+
             & > #open-menu
             {
                 position: absolute;

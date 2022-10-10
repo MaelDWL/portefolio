@@ -38,7 +38,7 @@
 
     <header class="header">
         <div id="ctn-header-cta">
-            <i class="fa-solid fa-moon"></i>
+            <i id="switch-light" class="fa-solid fa-moon"></i>
             <i id="open-menu" class="fa-solid fa-bars" onclick="TriggerMenu()"></i>
         </div>
     </header>

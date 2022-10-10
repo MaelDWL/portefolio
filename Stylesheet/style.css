@@ -175,7 +175,10 @@ body {
   }
   .header {
     top: 90px;
-    z-index: -1;
+    background: none;
+  }
+  .header > #ctn-header-cta {
+    position: relative;
   }
   .header > #ctn-header-cta > #open-menu {
     position: absolute;
