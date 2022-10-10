@@ -33,3 +33,13 @@
 		width: 0;
 	}
 }
+
+/* The infinite slide effect */
+@keyframes slide {
+	from {
+		background-position-x: 2rem;
+	}
+	to {
+		background-position-x: 0;
+	}
+}
