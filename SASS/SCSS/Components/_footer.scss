@@ -1,0 +1,54 @@
+@use "../Abstracts" as *;
+
+.footer
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100px;
+	margin-top: 50px;
+
+	background: $light-black;
+	border-top: solid 3px $grey;
+	color: $white;
+	font-family: $montserrat;
+
+	& > #social-ctn
+	{
+		margin-bottom: 15px;
+
+		& > a
+		{
+			margin: 0 10px;
+
+			&:hover > i
+			{
+				color: $black;
+
+				transition: .3s;
+			}
+
+			& > i
+			{
+				width: auto;
+				height: 1.5rem;
+
+				color: $white;
+				font-size: 1.5rem;
+
+				transition: .3s;
+			}
+		}
+	}
+
+	& > span
+	{
+		display: block;
+		width: 100%;
+
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

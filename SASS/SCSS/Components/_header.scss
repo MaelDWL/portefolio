@@ -1,7 +1,12 @@
 @use "../Abstracts" as *;
 
-.header
+.menu
 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
     & > #trigger-menu
     {
         position: absolute;
@@ -11,37 +16,9 @@
         {
             height: 272px;
 
-            border-bottom: solid 1px $grey;
+            border-bottom: solid 3px $grey;
 
             transition: .3s;
-        }
-    }
-
-    & #ctn-header-cta
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-        & > .fa-solid
-        {
-            margin: 10px;
-            padding: 10px;
-
-            background: $black;
-            color: $white;
-            border: solid 1px $light-black;
-            border-radius: 100%;
-
-            cursor: pointer;
-            transition: .3s;
-
-            &:hover
-            {
-                border: solid 1px $white;
-
-                transition: .3s;
-            }
         }
     }
 
@@ -62,7 +39,7 @@
         margin: 0;
         padding: 0;
 
-        background: $light-black;
+        background: $black;
         border-bottom: solid 0 $grey;
 
         list-style: none;
@@ -122,20 +99,51 @@
     }
 }
 
+.header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: $black;
+
+    & #ctn-header-cta
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        & > .fa-solid
+        {
+            margin: 10px;
+            padding: 10px;
+
+            background: $black;
+            color: $white;
+            border: solid 1px $light-black;
+            border-radius: 100%;
+
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover
+            {
+                border: solid 1px $white;
+
+                transition: .3s;
+            }
+        }
+    }
+
+
+}
+
 /* [640px -> 767] */
 @media only screen and (min-width: 640px)
 {
-    .header
+    .menu
     {
-        & > #trigger-menu
-        {
-            &:checked ~ ul
-            {
-                height: auto;
-
-                border-bottom: none;
-            }
-        }
         & > ul
         {
             position: relative;
@@ -149,7 +157,7 @@
             padding: 8px 0;
 
             background: $light-black;
-            border-bottom: solid 0 $grey;
+            border-bottom: solid 3px $grey;
 
             list-style: none;
             transition: .3s;
@@ -172,6 +180,12 @@
                 display: none;
             }
         }
+    }
+
+    .header
+    {
+        top: 90px;
+        z-index: -1;
 
         & > #ctn-header-cta
         {
@@ -184,10 +198,20 @@
     }
 }
 
-/* [768px -> 1023] */
+
+/* [768px -> 830] */
 @media only screen and (min-width: 768px)
 {
 
+}
+
+/* [830 -> 1023] */
+@media only screen and (min-width: 830px)
+{
+    .header
+    {
+        top: 65px;
+    }
 }
 
 /* [1024 -> infinite] */

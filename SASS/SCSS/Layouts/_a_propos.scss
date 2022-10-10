@@ -1,0 +1,200 @@
+@use "../Abstracts" as *;
+
+#a-propos
+{
+	color: $white;
+
+	& > #presentation,
+	& > #language-skills,
+	& > #software-skills,
+	& > #certifications
+	{
+		margin-bottom: 60px;
+		padding: 30px 20px 10px;
+
+		background: $light-black;
+		border-radius: 7px;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+		& > h1
+		{
+			margin: 0;
+			margin-bottom: 40px;
+
+			text-align: center;
+
+			&:after
+			{
+				content: "";
+				display: block;
+
+				width: 70px;
+				margin: 0 auto;
+				padding-bottom: 15px;
+
+				border-bottom: solid 4px $white;
+			}
+		}
+
+		& > p
+		{
+			text-align: justify;
+			text-justify: auto;
+		}
+
+		& > ul
+		{
+			position: relative;
+
+			display: flex;
+			flex-direction: column;
+
+			padding: 0;
+
+			&:hover > .hit-box
+			{
+				opacity: .05;
+				transition: .2s;
+			}
+
+			& > .hit-box
+			{
+				list-style: none;
+
+				&:hover
+				{
+					scale: 1.1;
+					opacity: 1;
+					transition: .2s;
+				}
+
+				& > .skill
+				{
+					position: relative;
+					overflow: hidden;
+
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					width: 100%;
+					margin: 20px 0;
+					padding: 10px 10px;
+					box-sizing: border-box;
+
+					background: $grey;
+					border-radius: 8px;
+					box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+					transition: .5s;
+
+					& > .icn-ctn
+					{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						width: 80px;
+
+						& > img
+						{
+							position: relative;
+
+							width: auto;
+							max-width: 80px;
+							height: 30px;
+
+							margin-top: -2px;
+						}
+					}
+
+					& > .bar
+					{
+						position: relative;
+						overflow: hidden;
+
+						width: calc(100% - 130px);
+						height: 20px;
+						margin: 0 10px;
+
+						background: $black;
+						border-radius: 10px;
+						box-shadow: inset 0 0 10px $black;
+
+						& > .progress
+						{
+							position: absolute;
+							top: 0;
+							left: 0;
+
+							width: 95%;
+							height: 100%;
+
+							border-radius: 10px;
+							box-shadow: inset 0 0 2px $black;
+
+							animation: progress-bar 3s ease-in-out forwards;
+						}
+					}
+
+					& > .value
+					{
+						position: relative;
+
+						width: 50px;
+
+						text-align: center;
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+				}
+
+
+				&:nth-child(1) > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #81ecec, #00cec9);
+				}
+
+				&:nth-child(2)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #ffeaa7, #fdcb6e);
+				}
+
+				&:nth-child(3)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+				}
+
+				&:nth-child(4)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #fab1a0, #e17055);
+				}
+
+				&:nth-child(5)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #fd79a8, #e84393);
+				}
+
+				&:nth-child(6)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #74b9ff, #0984e3);
+				}
+
+				&:nth-child(7)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #ff7675, #d63031);
+				}
+
+				&:nth-child(8)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #55efc4, #00b894);
+				}
+
+				&:nth-child(9)  > .skill> .bar > .progress
+				{
+					background: linear-gradient(45deg, #b8e994, #78e08f);
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
-<main id="about" class="main-content">
-    <div class="description">
+<main id="a-propos" class="main-content">
+    <div id="presentation">
+        <h1>À propos</h1>
         <p>
             Je m’appelle Mael Dewulf, j’ai 19 ans, je suis étudiant en BTS Services aux Organisations options Solutions
             Logicielles et Application Métier à l’ESIEE-IT une école de la CCI de Paris Île-de-France, et apprenti
@@ -22,50 +23,162 @@
         </p>
     </div>
 
-    <div>
-        <div class="skills">
-            <h1>Langages et Frameworks</h1>
+    <div id="language-skills">
+        <h1>Langages et Frameworks</h1>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS/SCSS</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>MySQL</li>
-                <li>VueJs</li>
-                <li>Django</li>
-            </ul>
-        </div>
+        <ul>
+            <li class="hit-box">
+                <div class="skill">
+                <div class="icn-ctn">
+                    <img class="skill-icn" src="/SASS/Images/html.png">
+                </div>
 
-        <div class="skills">
-            <h1>Logiciels et Outils</h1>
+                <div class="bar">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+                <span class="value">95%</span>
+                </div>
+            </li>
 
-            <ul>
-                <li>GitLab</li>
-                <li>GitHub</li>
-                <li>VisualStudioCode</li>
-                <li>Atom</li>
-                <li>Inteliji</li>
-                <li>Mamp</li>
-                <li>Docker</li>
-                <li>Wamp</li>
-                <li>PhpMyAdmin</li>
-                <li>Trello</li>
-                <li>PyCharm</li>
-                <li>Figma</li>
-            </ul>
-        </div>
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/css.png">
+                    </div>
 
-        <div class="skills">
-            <h1>Certifications</h1>
+                    <div class="bar">
+                        <div class="progress" style="width: 93%"></div>
+                    </div>
+                    <span class="value">93%</span>
+                </div>
+            </li>
 
-            <ul>
-                <li>MOOC CNIL</li>
-                <li>MOOC ANSSI</li>
-                <li>La Protection du Secret</li>
-            </ul>
-        </div>
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/js.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+
+                    <span class="value">80%</span>
+                </div>
+            </li>
+
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/php.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 87%"></div>
+                    </div>
+
+                    <span class="value">87%</span>
+                </div>
+            </li>
+
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/python.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+
+                    <span class="value">75%</span>
+                </div>
+            </li>
+
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/java.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+
+                    <span class="value">70%</span>
+                </div>
+            </li>
+
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/mysql.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+
+                    <span class="value">85%</span>
+                </div>
+            </li>
+
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/vuejs.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 32%"></div>
+                    </div>
+
+                    <span class="value">32%</span>
+                </div>
+            </li>
+
+            <li class="hit-box">
+                <div class="skill">
+                    <div class="icn-ctn">
+                        <img class="skill-icn" src="/SASS/Images/django.png">
+                    </div>
+
+                    <div class="bar">
+                        <div class="progress" style="width: 7%"></div>
+                    </div>
+
+                    <span class="value">7%</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="software-skills">
+        <h1>Logiciels et Outils</h1>
+
+        <ul>
+            <li>GitLab</li>
+            <li>GitHub</li>
+            <li>VisualStudioCode</li>
+            <li>Atom</li>
+            <li>Inteliji</li>
+            <li>Mamp</li>
+            <li>Docker</li>
+            <li>Wamp</li>
+            <li>PhpMyAdmin</li>
+            <li>Trello</li>
+            <li>PyCharm</li>
+            <li>Figma</li>
+        </ul>
+    </div>
+
+    <div id="certifications">
+        <h1>Certifications</h1>
+
+        <ul>
+            <li>MOOC CNIL</li>
+            <li>MOOC ANSSI</li>
+            <li>La Protection du Secret</li>
+        </ul>
     </div>
 </main>

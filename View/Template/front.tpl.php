@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <nav class="menu">
         <input id="trigger-menu" type="checkbox">
 
         <ul>
@@ -34,14 +34,28 @@
             <a href="contact" class="link-menu">Contact</a>
             <li onclick="TriggerMenu()"><i id="close-menu" class="fa-solid fa-caret-up"></i></li>
         </ul>
+    </nav>
 
+    <header class="header">
         <div id="ctn-header-cta">
             <i class="fa-solid fa-moon"></i>
             <i id="open-menu" class="fa-solid fa-bars" onclick="TriggerMenu()"></i>
         </div>
     </header>
         
-        <?php  include "View/".$this->view.".view.php" ?>
+    <?php  include "View/".$this->view.".view.php" ?>
+
+    <footer class="footer">
+        <div id="social-ctn">
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <span>Copyright © 2022 Mael DEWULF</span>
+    </footer>
 
     <script type="text/javascript">
         function TriggerMenu()
