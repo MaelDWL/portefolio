@@ -22,7 +22,10 @@
   }
 }
 body {
+  display: flex;
+  flex-direction: column;
   min-width: 305px;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   background: #2f3542;
@@ -265,10 +268,12 @@ body {
   }
 }
 #contact {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 #contact > #contact-details {
   width: 100%;
@@ -276,6 +281,31 @@ body {
 #contact > #contact-details > iframe {
   width: 100%;
   height: 400px;
+}
+#contact > #contact-details > #contact-address, #contact > #contact-details > #contact-phone, #contact > #contact-details > #contact-email, #contact > #contact-details > #contact-social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: #fff;
+}
+#contact > #contact-details > #contact-address i, #contact > #contact-details > #contact-phone i, #contact > #contact-details > #contact-email i, #contact > #contact-details > #contact-social i {
+  padding-right: 10px;
+}
+#contact > #contact-details > #contact-address > .adjust, #contact > #contact-details > #contact-phone > .adjust, #contact > #contact-details > #contact-email > .adjust, #contact > #contact-details > #contact-social > .adjust {
+  width: 1rem;
+}
+#contact > #contact-details > #contact-address > p, #contact > #contact-details > #contact-phone > p, #contact > #contact-details > #contact-email > p, #contact > #contact-details > #contact-social > p {
+  margin: 0;
+}
+#contact > #contact-details > #contact-address > a, #contact > #contact-details > #contact-phone > a, #contact > #contact-details > #contact-email > a, #contact > #contact-details > #contact-social > a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#contact > #contact-details > #contact-address > a:hover, #contact > #contact-details > #contact-phone > a:hover, #contact > #contact-details > #contact-email > a:hover, #contact > #contact-details > #contact-social > a:hover {
+  color: #57606f;
+  transition: 0.2s;
 }
 #contact > #contact-form {
   display: flex;
@@ -291,7 +321,7 @@ body {
 }
 #contact > #contact-form > .input {
   margin-bottom: 20px;
-  padding: 5px 8px;
+  padding: 8px 13px;
   background: #57606f;
   color: #fff;
   border: none;
@@ -299,6 +329,9 @@ body {
 }
 #contact > #contact-form > .input:focus {
   outline: none;
+}
+#contact > #contact-form > textarea {
+  resize: none;
 }
 
 /* [768px -> 1023] */
@@ -316,6 +349,9 @@ body {
   #contact > #contact-details {
     width: 50%;
     padding-right: 7.5%;
+  }
+  #contact > #contact-details > iframe {
+    height: 220px;
   }
   #contact > #contact-form {
     width: 50%;
