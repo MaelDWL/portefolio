@@ -480,17 +480,17 @@ body {
   padding: 0;
 }
 #a-propos > #presentation > ul:hover > .hit-box, #a-propos > #language-skills > ul:hover > .hit-box, #a-propos > #software-skills > ul:hover > .hit-box, #a-propos > #certifications > ul:hover > .hit-box {
-  opacity: 0.05;
-  transition: 0.2s;
+  opacity: 0.35;
+  transition: 0.4s;
 }
 #a-propos > #presentation > ul > .hit-box, #a-propos > #language-skills > ul > .hit-box, #a-propos > #software-skills > ul > .hit-box, #a-propos > #certifications > ul > .hit-box {
   list-style: none;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 #a-propos > #presentation > ul > .hit-box:hover, #a-propos > #language-skills > ul > .hit-box:hover, #a-propos > #software-skills > ul > .hit-box:hover, #a-propos > #certifications > ul > .hit-box:hover {
   scale: 1.1;
   opacity: 1;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 #a-propos > #presentation > ul > .hit-box > .skill, #a-propos > #language-skills > ul > .hit-box > .skill, #a-propos > #software-skills > ul > .hit-box > .skill, #a-propos > #certifications > ul > .hit-box > .skill {
   position: relative;
