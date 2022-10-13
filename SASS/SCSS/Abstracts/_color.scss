@@ -8,6 +8,40 @@ $light-blue:    #74b9ff;
 
 $dark-saphire:  #0c2461;
 
+.dark-theme
+{
+	--color-primary: 				#2f3542;
+	--color-secondary: 				#57606f;
+	--color-tertiary: 				#747d8c;
+
+	--color-highlight-theme: 		#fff;
+	--color-no-highlight-theme: 	#747d8c;
+
+	--color-bg-input: 				#57606f;
+	--color-border: 				#57606f;
+	--color-separator: 				#747d8c;
+	--color-font: 					#fff;
+
+	--gradient-metal-effect:		linear-gradient(0deg, #747d8c 50%, rgba(255, 255, 255, .1) 50%);
+}
+
+.light-theme
+{
+	--color-primary: 				#fff;
+	--color-secondary: 				#fff;
+	--color-tertiary: 				#fff;
+
+	--color-highlight-theme: 		#2f3542;
+	--color-no-highlight-theme: 	#747d8c80;
+
+	--color-bg-input: 				#747d8c40;
+	--color-border: 				#747d8c;
+	--color-separator: 				#2f3542;
+	--color-font: 					#57606f;
+
+	--gradient-metal-effect:		linear-gradient(0deg, rgba(0, 0, 0, .1) 50%, #fff 50%);
+}
+
 .blue
 {
 	color: $blue;

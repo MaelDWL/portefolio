@@ -16,7 +16,7 @@
         {
             height: 332px;
 
-            border-bottom: solid 3px $grey;
+            border-bottom: solid 3px var(--color-tertiary);
 
             transition: .3s;
         }
@@ -45,8 +45,9 @@
         margin: 10px 0;
         padding: 0 0 0 40px;
 
-        background: $black;
-        border-bottom: solid 0 $grey;
+        background: var(--color-primary);
+        border-bottom: solid 0 var(--color-tertiary);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
         list-style: none;
         transition: .3s;
@@ -59,7 +60,7 @@
             margin: 0;
             padding: 10px 0;
 
-            color: $white;
+            color: var(--color-font);
             font-size: 1.2rem;
             font-family: $montserrat;
             font-weight: 600;
@@ -100,7 +101,7 @@
             margin-left: 10px;
             padding-left: 20px;
 
-            border-left: solid 2px $white;
+            border-left: solid 2px var(--color-font);
         }
 
         & > .close-menu-cta
@@ -114,7 +115,7 @@
             {
                 padding: 10px 0;
 
-                color: $white;
+                color: var(--color-font);
                 font-size: 1.5rem;
 
                 cursor: pointer;
@@ -137,7 +138,8 @@
     left: 0;
     z-index: 1;
 
-    background: $black;
+    background: var(--color-primary);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
     & #ctn-header-cta
     {
@@ -150,9 +152,9 @@
             margin: 10px;
             padding: 10px;
 
-            background: $black;
-            color: $white;
-            border: solid 1px $light-black;
+            background: var(--color-primary);
+            color: var(--color-font);
+            border: solid 1.5px var(--color-no-highlight-theme);
             border-radius: 100%;
 
             cursor: pointer;
@@ -160,7 +162,7 @@
 
             &:hover
             {
-                border: solid 1px $white;
+                border: solid 1.5px var(--color-highlight-theme);
 
                 transition: .3s;
             }
@@ -201,8 +203,8 @@
 
         padding: 0 5%;
 
-        background: $light-black;
-        border-bottom: solid 3px $grey;
+        background: var(--color-secondary);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
         & > .name-menu
         {
@@ -211,7 +213,7 @@
 
             width: 170px;
 
-            color: $white;
+            color: var(--color-font);
             font-size: 1.2rem;
             text-align: center;
             font-family: "Montserrat", sans-serif;
@@ -232,6 +234,7 @@
 
             background: none;
             border-bottom: none;
+            box-shadow: none;
 
             & .parent-menu-ctn
             {
@@ -258,9 +261,9 @@
 
                 padding: 0;
 
-                background: $light-black;
-                border: solid 1px $white;
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                background: var(--color-secondary);
+                border: solid 1px var(--color-font);
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
                 & > .link-menu
                 {
@@ -281,9 +284,9 @@
 
                     transform: rotate(45deg);
 
-                    background: $light-black;
-                    border-top: solid 1px $white;
-                    border-left: solid 1px $white;
+                    background: var(--color-secondary);
+                    border-top: solid 1px var(--color-font);
+                    border-left: solid 1px var(--color-font);
                 }
             }
 
@@ -309,6 +312,7 @@
         right: 0;
 
         background: none;
+        box-shadow: none;
 
         & > #ctn-header-cta
         {

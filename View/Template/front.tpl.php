@@ -20,6 +20,9 @@
     <!--    TOASTR    -->
     <link href="Stylesheet/vendor/toastr.min.css" rel="stylesheet">
     <script src="SASS/JS/vendor/toastr.min.js"></script>
+
+    <!--    JS    -->
+    <script src="SASS/JS/theme.js"></script>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
 
     <header class="header">
         <div id="ctn-header-cta">
-            <i id="switch-light" class="fa-solid fa-moon"></i>
+            <i id="switch-light" class="fa-solid fa-moon" onclick="toggleTheme()"></i>
             <i id="open-menu" class="fa-solid fa-bars" onclick="TriggerMenu()"></i>
         </div>
     </header>

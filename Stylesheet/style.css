@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+.dark-theme {
+  --color-primary:	#2f3542;
+  --color-secondary:	#57606f;
+  --color-tertiary:	#747d8c;
+  --color-highlight-theme:	#fff;
+  --color-no-highlight-theme:	#747d8c;
+  --color-bg-input:	#57606f;
+  --color-border:	#57606f;
+  --color-separator:	#747d8c;
+  --color-font:	#fff;
+  --gradient-metal-effect:	linear-gradient(0deg, #747d8c 50%, rgba(255, 255, 255, .1) 50%);
+}
+
+.light-theme {
+  --color-primary:	#fff;
+  --color-secondary:	#fff;
+  --color-tertiary:	#fff;
+  --color-highlight-theme:	#2f3542;
+  --color-no-highlight-theme:	#747d8c80;
+  --color-bg-input:	#747d8c40;
+  --color-border:	#747d8c;
+  --color-separator:	#2f3542;
+  --color-font:	#57606f;
+  --gradient-metal-effect:	linear-gradient(0deg, rgba(0, 0, 0, .1) 50%, #fff 50%);
+}
+
 .blue {
   color: #0984e3;
 }
@@ -37,17 +63,18 @@
   }
 }
 body {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-width: 305px;
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  background: #2f3542;
+  background: var(--color-primary);
 }
 
 .main-content {
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -59,7 +86,7 @@ body {
 @media only screen and (min-width: 640px) {
   .main-content {
     flex: 1;
-    padding: 0 15%;
+    padding: 20px 15% 0 15%;
   }
 }
 .menu {
@@ -74,7 +101,7 @@ body {
 }
 .menu > #trigger-menu:checked ~ ul {
   height: 332px;
-  border-bottom: solid 3px #747d8c;
+  border-bottom: solid 3px var(--color-tertiary);
   transition: 0.3s;
 }
 .menu > .name-menu {
@@ -94,8 +121,9 @@ body {
   height: 0;
   margin: 10px 0;
   padding: 0 0 0 40px;
-  background: #2f3542;
-  border-bottom: solid 0 #747d8c;
+  background: var(--color-primary);
+  border-bottom: solid 0 var(--color-tertiary);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   list-style: none;
   transition: 0.3s;
 }
@@ -104,7 +132,7 @@ body {
   width: fit-content;
   margin: 0;
   padding: 10px 0;
-  color: #fff;
+  color: var(--color-font);
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -132,7 +160,7 @@ body {
   align-items: flex-start;
   margin-left: 10px;
   padding-left: 20px;
-  border-left: solid 2px #fff;
+  border-left: solid 2px var(--color-font);
 }
 .menu > ul > .close-menu-cta {
   position: absolute;
@@ -142,7 +170,7 @@ body {
 }
 .menu > ul > .close-menu-cta > #close-menu {
   padding: 10px 0;
-  color: #fff;
+  color: var(--color-font);
   font-size: 1.5rem;
   cursor: pointer;
   transition: 0.3s;
@@ -157,7 +185,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: #2f3542;
+  background: var(--color-primary);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .header #ctn-header-cta {
   display: flex;
@@ -167,15 +196,15 @@ body {
 .header #ctn-header-cta > .fa-solid {
   margin: 10px;
   padding: 10px;
-  background: #2f3542;
-  color: #fff;
-  border: solid 1px #57606f;
+  background: var(--color-primary);
+  color: var(--color-font);
+  border: solid 1.5px var(--color-no-highlight-theme);
   border-radius: 100%;
   cursor: pointer;
   transition: 0.3s;
 }
 .header #ctn-header-cta > .fa-solid:hover {
-  border: solid 1px #fff;
+  border: solid 1.5px var(--color-highlight-theme);
   transition: 0.3s;
 }
 
@@ -190,14 +219,14 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 0 5%;
-    background: #57606f;
-    border-bottom: solid 3px #747d8c;
+    background: var(--color-secondary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
   .menu > .name-menu {
     position: relative;
     display: block;
     width: 170px;
-    color: #fff;
+    color: var(--color-font);
     font-size: 1.2rem;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -213,6 +242,7 @@ body {
     padding: 0;
     background: none;
     border-bottom: none;
+    box-shadow: none;
   }
   .menu > ul .parent-menu-ctn {
     position: relative;
@@ -229,9 +259,9 @@ body {
     left: 0;
     display: none;
     padding: 0;
-    background: #57606f;
-    border: solid 1px #fff;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: var(--color-secondary);
+    border: solid 1px var(--color-font);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
   .menu > ul .sub-menu-ctn > .link-menu {
     padding: 10px 20px;
@@ -245,9 +275,9 @@ body {
     margin-top: -9px;
     margin-left: 35px;
     transform: rotate(45deg);
-    background: #57606f;
-    border-top: solid 1px #fff;
-    border-left: solid 1px #fff;
+    background: var(--color-secondary);
+    border-top: solid 1px var(--color-font);
+    border-left: solid 1px var(--color-font);
   }
   .menu > ul .accueil-menu:hover ~ .sub-accueil, .menu > ul .sub-accueil:hover {
     display: flex;
@@ -262,6 +292,7 @@ body {
     top: 69px;
     right: 0;
     background: none;
+    box-shadow: none;
   }
   .header > #ctn-header-cta {
     position: relative;
@@ -278,8 +309,8 @@ body {
   align-items: center;
   height: 100px;
   margin-top: 50px;
-  background: #57606f;
-  border-top: solid 3px #747d8c;
+  background: var(--color-secondary);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
@@ -290,19 +321,20 @@ body {
   margin: 0 10px;
 }
 .footer > #social-ctn > a:hover > i {
-  color: #2f3542;
+  opacity: 0.4;
   transition: 0.3s;
 }
 .footer > #social-ctn > a > i {
   width: auto;
   height: 1.5rem;
-  color: #fff;
+  color: var(--color-font);
   font-size: 1.5rem;
   transition: 0.3s;
 }
 .footer > span {
   display: block;
   width: 100%;
+  color: var(--color-font);
   text-align: center;
   text-transform: uppercase;
 }
@@ -323,17 +355,17 @@ body {
 }
 .btn-submit {
   padding: 10px 20px;
-  background: #57606f;
-  color: #fff;
-  border: solid 1px #57606f;
+  background: var(--color-font);
+  color: var(--color-secondary);
+  border: solid 1px var(--color-secondary);
   border-radius: 4px;
   text-decoration: none;
+  opacity: 0.6;
   transition: 0.3s;
   cursor: pointer;
 }
 .btn-submit:hover {
-  background: #fff;
-  color: #57606f;
+  opacity: 1;
   transition: 0.3s;
 }
 
@@ -349,7 +381,7 @@ body {
 }
 
 #home {
-  color: #fff;
+  color: var(--color-font);
 }
 #home > .presentation {
   display: flex;
@@ -428,17 +460,18 @@ body {
   width: 50%;
   height: 2px;
   margin: 40px auto;
-  background: #57606f;
+  background: var(--color-separator);
 }
 #contact > #contact-details > iframe {
   width: 100%;
   height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 #contact > #contact-details > #contact-address, #contact > #contact-details > #contact-phone, #contact > #contact-details > #contact-email, #contact > #contact-details > #contact-social {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-  color: #fff;
+  color: var(--color-font);
 }
 #contact > #contact-details > #contact-address i, #contact > #contact-details > #contact-phone i, #contact > #contact-details > #contact-email i, #contact > #contact-details > #contact-social i {
   padding-right: 10px;
@@ -450,33 +483,36 @@ body {
   margin: 0;
 }
 #contact > #contact-details > #contact-address > a, #contact > #contact-details > #contact-phone > a, #contact > #contact-details > #contact-email > a, #contact > #contact-details > #contact-social > a {
-  color: #fff;
+  color: var(--color-font);
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s;
 }
 #contact > #contact-details > #contact-address > a:hover, #contact > #contact-details > #contact-phone > a:hover, #contact > #contact-details > #contact-email > a:hover, #contact > #contact-details > #contact-social > a:hover {
-  color: #57606f;
+  opacity: 0.4;
   transition: 0.2s;
 }
 #contact > #contact-form {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
 #contact > #contact-form > h1 {
+  width: 100%;
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-font);
   font-size: 1rem;
   font-weight: bold;
 }
 #contact > #contact-form > .input {
+  width: 100%;
   margin-bottom: 20px;
   padding: 8px 13px;
-  background: #57606f;
-  color: #fff;
+  background: var(--color-bg-input);
   border: none;
+  color: var(--color-font);
   border-radius: 4px;
 }
 #contact > #contact-form > .input:focus {
@@ -484,6 +520,9 @@ body {
 }
 #contact > #contact-form > textarea {
   resize: none;
+}
+#contact > #contact-form > .btn-submit {
+  width: max-content;
 }
 
 /* [768px -> 1023] */
@@ -498,7 +537,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 50px;
   }
   #contact > #contact-details {
     width: 50%;
@@ -516,12 +554,12 @@ body {
   }
 }
 #a-propos {
-  color: #fff;
+  color: var(--color-font);
 }
 #a-propos > #presentation, #a-propos > #language-skills, #a-propos > #software-skills, #a-propos > #certifications {
   margin-bottom: 60px;
   padding: 30px 20px 10px;
-  background: #57606f;
+  background: var(--color-bg-input);
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -536,7 +574,7 @@ body {
   width: 70px;
   margin: 0 auto;
   padding-bottom: 15px;
-  border-bottom: solid 4px #fff;
+  border-bottom: solid 4px var(--color-font);
 }
 #a-propos > #presentation > p, #a-propos > #language-skills > p, #a-propos > #software-skills > p, #a-propos > #certifications > p {
   text-align: justify;
@@ -571,10 +609,9 @@ body {
   margin: 20px 0;
   padding: 10px 10px;
   box-sizing: border-box;
-  background: #747d8c;
+  background: var(--color-tertiary);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.5s;
 }
 #a-propos > #presentation > ul > .hit-box > .skill:before, #a-propos > #language-skills > ul > .hit-box > .skill:before, #a-propos > #software-skills > ul > .hit-box > .skill:before, #a-propos > #certifications > ul > .hit-box > .skill:before {
   content: "";
@@ -582,8 +619,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  background: var(--gradient-metal-effect);
 }
 #a-propos > #presentation > ul > .hit-box > .skill > .icn-ctn, #a-propos > #language-skills > ul > .hit-box > .skill > .icn-ctn, #a-propos > #software-skills > ul > .hit-box > .skill > .icn-ctn, #a-propos > #certifications > ul > .hit-box > .skill > .icn-ctn {
   display: flex;

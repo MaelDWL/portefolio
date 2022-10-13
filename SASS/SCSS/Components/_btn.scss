@@ -23,19 +23,19 @@
 	{
 		padding: 10px 20px;
 
-		background: $light-black;
-		color: $white;
-		border: solid 1px $light-black;
+		background: var(--color-font);
+		color: var(--color-secondary);
+		border: solid 1px var(--color-secondary);;
 		border-radius: 4px;
 		text-decoration: none;
 
+		opacity: .6;
 		transition: .3s;
 		cursor: pointer;
 
 		&:hover
 		{
-			background: $white;
-			color: $light-black;
+			opacity: 1;
 			transition: .3s;
 		}
 	}
