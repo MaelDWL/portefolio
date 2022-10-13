@@ -241,7 +241,7 @@ body {
   .menu > .name-menu {
     position: relative;
     display: block;
-    width: 170px;
+    min-width: 160px;
     color: var(--color-font);
     font-size: 1.2rem;
     text-align: center;
@@ -261,6 +261,9 @@ body {
   }
   .menu > ul .parent-menu-ctn {
     position: relative;
+  }
+  .menu > ul .parent-menu-ctn:first-child {
+    padding-top: 0;
   }
   .menu > ul > .parent-menu-ctn > .link-menu, .menu > ul > .link-menu {
     width: max-content;
@@ -525,6 +528,7 @@ body {
   width: 100%;
   margin-bottom: 20px;
   padding: 8px 13px;
+  box-sizing: border-box;
   background: var(--color-bg-input);
   border: none;
   color: var(--color-font);

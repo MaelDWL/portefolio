@@ -231,7 +231,7 @@
             position: relative;
             display: block;
 
-            width: 170px;
+            min-width: 160px;
 
             color: var(--color-font);
             font-size: 1.2rem;
@@ -258,6 +258,11 @@
             & .parent-menu-ctn
             {
                 position: relative;
+
+                &:first-child
+                {
+                    padding-top: 0;
+                }
             }
 
             & > .parent-menu-ctn > .link-menu,
