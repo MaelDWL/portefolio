@@ -3,8 +3,9 @@
   --color-primary:	#2f3542;
   --color-secondary:	#57606f;
   --color-tertiary:	#747d8c;
-  --color-highlight-theme:	#fff;
-  --color-no-highlight-theme:	#747d8c;
+  --color-highlight-theme-border:	#fdcb6e;
+  --color-no-highlight-theme-border:	#747d8c;
+  --color-highlight-theme-picto:	#fdcb6e;
   --color-bg-input:	#57606f;
   --color-border:	#57606f;
   --color-separator:	#747d8c;
@@ -16,8 +17,9 @@
   --color-primary:	#fff;
   --color-secondary:	#fff;
   --color-tertiary:	#fff;
-  --color-highlight-theme:	#2f3542;
-  --color-no-highlight-theme:	#747d8c80;
+  --color-highlight-theme-border:	#74b9ff;
+  --color-no-highlight-theme-border:	#747d8c80;
+  --color-highlight-theme-picto:	#74b9ff;
   --color-bg-input:	#747d8c40;
   --color-border:	#747d8c;
   --color-separator:	#2f3542;
@@ -198,14 +200,25 @@ body {
   padding: 10px;
   background: var(--color-primary);
   color: var(--color-font);
-  border: solid 1.5px var(--color-no-highlight-theme);
+  border: solid 1.5px var(--color-no-highlight-theme-border);
   border-radius: 100%;
   cursor: pointer;
   transition: 0.3s;
 }
 .header #ctn-header-cta > .fa-solid:hover {
-  border: solid 1.5px var(--color-highlight-theme);
+  color: var(--color-highlight-theme-picto);
+  border: solid 1.5px var(--color-highlight-theme-border);
   transition: 0.3s;
+}
+
+.dark-theme .switch-theme-moon {
+  position: absolute;
+  display: none;
+}
+
+.light-theme .switch-theme-sun {
+  position: absolute;
+  display: none;
 }
 
 /* [640px -> 767] */

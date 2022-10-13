@@ -51,7 +51,8 @@
 
     <header class="header">
         <div id="ctn-header-cta">
-            <i id="switch-light" class="fa-solid fa-moon" onclick="toggleTheme()"></i>
+            <i id="switch-light" class="switch-theme-moon fa-solid fa-moon" onclick="toggleTheme()"></i>
+            <i id="switch-light" class="switch-theme-sun fa-solid fa-sun" onclick="toggleTheme()"></i>
             <i id="open-menu" class="fa-solid fa-bars" onclick="TriggerMenu()"></i>
         </div>
     </header>

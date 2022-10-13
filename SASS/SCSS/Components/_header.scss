@@ -154,7 +154,7 @@
 
             background: var(--color-primary);
             color: var(--color-font);
-            border: solid 1.5px var(--color-no-highlight-theme);
+            border: solid 1.5px var(--color-no-highlight-theme-border);
             border-radius: 100%;
 
             cursor: pointer;
@@ -162,14 +162,25 @@
 
             &:hover
             {
-                border: solid 1.5px var(--color-highlight-theme);
+                color: var(--color-highlight-theme-picto);
+                border: solid 1.5px var(--color-highlight-theme-border);
 
                 transition: .3s;
             }
         }
     }
+}
 
+.dark-theme .switch-theme-moon
+{
+    position: absolute;
+    display: none;
+}
 
+.light-theme .switch-theme-sun
+{
+    position: absolute;
+    display: none;
 }
 
 /* [640px -> 767] */
