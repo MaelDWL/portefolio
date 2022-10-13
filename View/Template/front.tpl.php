@@ -26,13 +26,23 @@
     <nav class="menu">
         <input id="trigger-menu" type="checkbox">
 
+        <span class="name-menu">Mael DEWULF</span>
+
         <ul>
-            <a href="accueil" class="link-menu">Accueil</a>
+            <div class="parent-menu-ctn">
+                <a href="accueil" class="link-menu accueil-menu">Accueil</a>
+
+                <div class="sub-menu-ctn sub-accueil">
+                    <a class="link-menu" href="accueil">Présentation</a>
+                    <a class="link-menu" href="a_propos">À propos</a>
+                </div>
+            </div>
+
             <a href="entreprise" class="link-menu">Entreprise</a>
-            <a href="realisations_professionelles" class="link-menu">Réalisations Professionelles</a>
+            <a href="realisations_professionelles" class="link-menu">Projets</a>
             <a href="veille_technologique" class="link-menu">Veille technologique</a>
             <a href="contact" class="link-menu">Contact</a>
-            <li onclick="TriggerMenu()"><i id="close-menu" class="fa-solid fa-caret-up"></i></li>
+            <li class="close-menu-cta" onclick="TriggerMenu()"><i id="close-menu" class="fa-regular fa-circle-xmark"></i></li>
         </ul>
     </nav>
 
