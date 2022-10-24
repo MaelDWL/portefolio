@@ -31,28 +31,39 @@ class Mailer
     private function prepareSetting()
     {
         //Server settings
-        $this->email->isSMTP();                                             //Send using SMTP
-        $this->email->Host          = 'smtp.gmail.com';                     //Set the SMTP server to send through
-        $this->email->SMTPAuth      = true;                                 //Enable SMTP authentication
-        $this->email->Username      = __MAILER_MAIL__;                      //SMTP username
-        $this->email->Password      = __MAILER_PASSWORD__;                  //SMTP password
-        $this->email->SMTPSecure    = PHPMailer::ENCRYPTION_SMTPS;          //Enable implicit TLS encryption
-        $this->email->Port          = __MAILER_PORT__;                      //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-        //Recipients
-        $this->email->setFrom('no-reply@tal.com', 'Admin');
+        $this->email->isSMTP();                                             // Send using SMTP
+        $this->email->Host          = 'smtp.gmail.com';                     // Set the SMTP server to send through
+        $this->email->SMTPAuth      = true;                                 // Enable SMTP authentication
+        $this->email->Username      = __MAILER_MAIL__;                      // SMTP username (email)
+        $this->email->Password      = __MAILER_PASSWORD__;                  // SMTP password (application password and not email account password)
+        $this->email->SMTPSecure    = PHPMailer::ENCRYPTION_SMTPS;          // Enable implicit TLS encryption
+        $this->email->Port          = __MAILER_PORT__;                      // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Content
-        $this->email->isHTML(true);                                  //Set email format to HTML
+        $this->email->isHTML(true);                                   // Set email format to HTML
     }
 
-    public function prepareContent($recipient, $subject, $content, $altContent)
+    public function prepareContentSendTo($p_recipient, $p_subject, $p_content, $p_altContent)
     {
-        $this->email->addAddress($recipient);
-        $this->email->Subject = $subject;
-        $this->email->Body    = $content;
-        $this->email->AltBody = $altContent;
-        $this->email->CharSet = 'UTF-8';
+        $this->email->setFrom(__MAILER_MAIL__, __MAILER_NAME__);
+        $this->email->addAddress($p_recipient);
+
+        $this->email->Subject   = $p_subject;
+        $this->email->Body      = $p_content;
+        $this->email->AltBody   = $p_altContent;
+        $this->email->CharSet   = 'UTF-8';
+    }
+
+    public function prepareContentGetFrom($p_senderEmail, $p_senderName, $p_subject, $p_content, $p_altContent = "")
+    {
+        $this->email->setFrom($p_senderEmail, $p_senderName);
+        $this->email->addAddress(__MAILER_MAIL__);
+        $this->email->addReplyTo($p_senderEmail, $p_senderName);
+
+        $this->email->Subject   = $p_subject;
+        $this->email->Body      = $p_content;
+        $this->email->AltBody   = $p_altContent;
+        $this->email->CharSet   = 'UTF-8';
     }
 
     public function send()

@@ -34,9 +34,9 @@
                 </div>
 
                 <div class="bar">
-                    <div class="progress" style="width: 95%"></div>
+                    <div class="progress" style="width: 50%"></div>
                 </div>
-                <span class="value">95%</span>
+                    <span class="value">50%</span>
                 </div>
             </li>
 
@@ -47,9 +47,9 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 93%"></div>
+                        <div class="progress" style="width: 30%"></div>
                     </div>
-                    <span class="value">93%</span>
+                    <span class="value">30%</span>
                 </div>
             </li>
 
@@ -60,10 +60,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 80%"></div>
+                        <div class="progress" style="width: 20%"></div>
                     </div>
 
-                    <span class="value">80%</span>
+                    <span class="value">20%</span>
                 </div>
             </li>
 
@@ -74,10 +74,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 87%"></div>
+                        <div class="progress" style="width: 20%"></div>
                     </div>
 
-                    <span class="value">87%</span>
+                    <span class="value">20%</span>
                 </div>
             </li>
 
@@ -88,10 +88,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 75%"></div>
+                        <div class="progress" style="width: 60%"></div>
                     </div>
 
-                    <span class="value">75%</span>
+                    <span class="value">60%</span>
                 </div>
             </li>
 
@@ -102,10 +102,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 70%"></div>
+                        <div class="progress" style="width: 60%"></div>
                     </div>
 
-                    <span class="value">70%</span>
+                    <span class="value">60%</span>
                 </div>
             </li>
 
@@ -116,10 +116,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 85%"></div>
+                        <div class="progress" style="width: 25%"></div>
                     </div>
 
-                    <span class="value">85%</span>
+                    <span class="value">25%</span>
                 </div>
             </li>
 
@@ -130,10 +130,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 32%"></div>
+                        <div class="progress" style="width: 7%"></div>
                     </div>
 
-                    <span class="value">32%</span>
+                    <span class="value">7%</span>
                 </div>
             </li>
 
@@ -144,10 +144,10 @@
                     </div>
 
                     <div class="bar">
-                        <div class="progress" style="width: 7%"></div>
+                        <div class="progress" style="width: 10%"></div>
                     </div>
 
-                    <span class="value">7%</span>
+                    <span class="value">10%</span>
                 </div>
             </li>
         </ul>

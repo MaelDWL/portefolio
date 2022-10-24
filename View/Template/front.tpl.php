@@ -23,13 +23,20 @@
 
     <!--    JS    -->
     <script src="SASS/JS/theme.js"></script>
+    <script src="SASS/JS/captcha_v3.js"></script>
+
+    <!--    CAPTCHA V3    -->
+    <?php
+        if ($_SERVER["HTTP_HOST"] == __SERVER_DOMAIN_NAME__)
+            echo '<script src="https://www.google.com/recaptcha/api.js"></script>';
+    ?>
 </head>
 
 <body>
     <nav class="menu">
         <input id="trigger-menu" type="checkbox">
 
-        <span class="name-menu">Mael DEWULF</span>
+        <a href="accueil" class="name-menu">Mael DEWULF</a>
 
         <ul>
             <div class="parent-menu-ctn">
@@ -56,13 +63,12 @@
             <i id="open-menu" class="fa-solid fa-bars" onclick="TriggerMenu()"></i>
         </div>
     </header>
-        
+
     <?php  include "View/".$this->view.".view.php" ?>
 
     <footer class="footer">
         <div id="social-ctn">
             <a href=""><i class="fa-brands fa-discord"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-github"></i></a>
@@ -81,6 +87,31 @@
             else
                 trigger.prop("checked", true);
         }
+
+		<?php
+            if (isset($_SESSION["success"]))
+				echo 'toastr.success("'.$_SESSION["success"].'");';
+
+            if (isset($_SESSION["warning"]))
+				echo 'toastr.warning("'.$_SESSION["warning"].'");';
+
+            if (isset($_SESSION["error"]))
+                echo 'toastr.error("'.$_SESSION["error"].'");';
+
+            unset($_SESSION["success"]);
+            unset($_SESSION["warning"]);
+            unset($_SESSION["error"]);
+        ?>
+
+        let toastList       = $(".toast")
+        let headerPosition  = $(".header")[0].getBoundingClientRect();
+
+        for (let i = 0; i < toastList.length; i++)
+		{
+			console.log(headerPosition);
+			toastList.css("top", headerPosition.top + "px");
+			toastList.css("left", headerPosition.left + "px");
+		}
     </script>
 </body>
 
