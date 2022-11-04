@@ -238,4 +238,51 @@
 			}
 		}
 	}
+
+	& > #software-skills
+	{
+		& > ul
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			& > .skill
+			{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+
+				width: 45%;
+				margin: 10px 0;
+				padding: 10px 0;
+
+				border-radius: 12px;
+
+				transition: .3s;
+
+				&:hover
+				{
+					background: $black;
+					scale: 1.2;
+				}
+
+				& >.skill-icn
+				{
+					width: 70%;
+					height: auto;
+					margin: auto;
+				}
+
+				& > .skill-label
+				{
+					margin-top: 15px;
+
+					text-align: center;
+				}
+			}
+		}
+	}
 }

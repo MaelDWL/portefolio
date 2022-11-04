@@ -157,18 +157,66 @@
         <h1>Logiciels et Outils</h1>
 
         <ul>
-            <li>GitLab</li>
-            <li>GitHub</li>
-            <li>VisualStudioCode</li>
-            <li>Atom</li>
-            <li>Inteliji</li>
-            <li>Mamp</li>
-            <li>Docker</li>
-            <li>Wamp</li>
-            <li>PhpMyAdmin</li>
-            <li>Trello</li>
-            <li>PyCharm</li>
-            <li>Figma</li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/gitlab.png">
+                <span class="skill-label">Gitlab</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/github.png">
+                <span class="skill-label">Github</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/visual_studio_code.png">
+                <span class="skill-label">VSCode</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/atom.png">
+                <span class="skill-label">Atom</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/pycharm.png">
+                <span class="skill-label">PyCharm</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/inteliji.png">
+                <span class="skill-label">Inteliji</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/mamp.png">
+                <span class="skill-label">Mamp</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/docker.png">
+                <span class="skill-label">Docker</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/wamp.png">
+                <span class="skill-label">Wamp</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/phpmyadmin.png">
+                <span class="skill-label">PHPMyAdmin</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/trello.png">
+                <span class="skill-label">Trello</span>
+            </li>
+
+            <li class="skill">
+                <img class="skill-icn" src="/SASS/Images/figma.png">
+                <span class="skill-label">Figma</span>
+            </li>
         </ul>
     </div>
 

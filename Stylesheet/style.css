@@ -721,5 +721,35 @@ body {
 #a-propos > #presentation > ul > .hit-box:nth-child(9) > .skill > .bar > .progress, #a-propos > #language-skills > ul > .hit-box:nth-child(9) > .skill > .bar > .progress, #a-propos > #software-skills > ul > .hit-box:nth-child(9) > .skill > .bar > .progress, #a-propos > #certifications > ul > .hit-box:nth-child(9) > .skill > .bar > .progress {
   background: linear-gradient(45deg, #b8e994, #78e08f);
 }
+#a-propos > #software-skills > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#a-propos > #software-skills > ul > .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 45%;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+#a-propos > #software-skills > ul > .skill:hover {
+  background: #2f3542;
+  scale: 1.2;
+}
+#a-propos > #software-skills > ul > .skill > .skill-icn {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+#a-propos > #software-skills > ul > .skill > .skill-label {
+  margin-top: 15px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
