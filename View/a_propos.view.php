@@ -224,9 +224,65 @@
         <h1>Certifications</h1>
 
         <ul>
-            <li>MOOC CNIL</li>
-            <li>MOOC ANSSI</li>
-            <li>La Protection du Secret</li>
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="fix-position">
+                            <img class="certification-icn" src="/SASS/Images/drsd.png">
+                        </div>
+
+                        <h1>La Protection du Secret</h1>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <div class="fix-position">
+                            <span>Certificat obtenu le :<br><span class="bold">04/2022</span></span>
+                        </div>
+
+                        <a class="btn" target="_blank" href="/Public/Certifications/certificate_La-protection-du-secret.pdf">Voir le certificat</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="fix-position">
+                            <img class="certification-icn" src="/SASS/Images/cnil.png">
+                        </div>
+
+                        <h1>MOOC CNIL</h1>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <div class="fix-position">
+                            <span>Certificat obtenu le :<br><span class="bold">09/2022</span></span>
+                        </div>
+
+                        <a class="btn" target="_blank" href="/Public/Certifications/Certif_CNIL.pdf">Voir le certificat</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="fix-position">
+                            <img class="certification-icn" src="/SASS/Images/ansii.png">
+                        </div>
+
+                        <h1>MOOC ANSII</h1>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <div class="fix-position">
+                            <span>Certificat obtenu le :<br><span class="bold">06/2022</span></span>
+                        </div>
+
+                        <a class="btn" target="_blank" href="/Public/Certifications/Certif-MoocANSSI.pdf">Voir le certificat</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
 </main>

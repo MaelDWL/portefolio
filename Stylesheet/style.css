@@ -584,8 +584,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 #a-propos > #presentation > h1, #a-propos > #language-skills > h1, #a-propos > #software-skills > h1, #a-propos > #certifications > h1 {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   text-align: center;
 }
 #a-propos > #presentation > h1:after, #a-propos > #language-skills > h1:after, #a-propos > #software-skills > h1:after, #a-propos > #certifications > h1:after {
@@ -724,7 +723,7 @@ body {
 #a-propos > #software-skills > ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #a-propos > #software-skills > ul > .skill {
@@ -733,14 +732,15 @@ body {
   justify-content: center;
   align-content: center;
   width: 45%;
-  margin: 10px 0;
+  max-width: 150px;
+  margin: 10px;
   padding: 10px 0;
   border-radius: 12px;
   transition: 0.3s;
 }
 #a-propos > #software-skills > ul > .skill:hover {
-  background: #2f3542;
-  scale: 1.2;
+  background: var(--color-primary);
+  scale: 1.1;
 }
 #a-propos > #software-skills > ul > .skill > .skill-icn {
   width: 70%;
@@ -750,6 +750,85 @@ body {
 #a-propos > #software-skills > ul > .skill > .skill-label {
   margin-top: 15px;
   text-align: center;
+}
+#a-propos > #certifications > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#a-propos > #certifications > ul > .flip-card {
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin: 20px 10px;
+  background-color: transparent;
+  list-style: none;
+  perspective: 1000px;
+}
+#a-propos > #certifications > ul > .flip-card:hover > .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border: solid 5px var(--color-primary);
+  text-align: center;
+  transition: transform 0.8s;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-front, #a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-front {
+  background: var(--color-secondary);
+  color: black;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-front > .fix-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 185px;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-front > .fix-position > img {
+  width: 60%;
+  max-width: 150px;
+  height: auto;
+  max-height: 150px;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-front > h1 {
+  height: 85px;
+  margin: 0;
+  color: var(--color-font);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-back {
+  transform: rotateY(180deg);
+  background: var(--color-secondary);
+  color: white;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-back > .fix-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 185px;
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-back > .fix-position > span {
+  color: var(--color-font);
+}
+#a-propos > #certifications > ul > .flip-card > .flip-card-inner > .flip-card-back > a {
+  height: 85px;
 }
 
 /*# sourceMappingURL=style.css.map */
