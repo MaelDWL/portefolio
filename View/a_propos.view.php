@@ -295,7 +295,7 @@
                 <!-- wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide" data-year="2020" style="background-image: url(https://unsplash.it/1920/500?image=11)">
+                    <div class="swiper-slide" data-year="2020" style="background-image: src('../Public/Ecole/Gustav.png')">
                         <div class="swiper-slide-content">
                             <span class="timeline-year">2020</span>
                             <h1 class="timeline-title">Bac STI2D</h1>
@@ -306,7 +306,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide" data-year="2021" style="background-image: url(https://unsplash.it/1920/500?image=12)">
+                    <div class="swiper-slide" data-year="2021" style="background-image: src('..\Public\Ecole\esiee.png')">
                         <div class="swiper-slide-content">
                             <span class="timeline-year">2021 - En cours</span>
                             <h1 class="timeline-title">BTS SIO SLAM</h1>
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <!-- Pagination -->
                 <div class="swiper-pagination"></div>
 
