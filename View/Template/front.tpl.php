@@ -21,11 +21,15 @@
     <link href="Stylesheet/vendor/toastr.min.css" rel="stylesheet">
     <script src="SASS/JS/vendor/toastr.min.js"></script>
 
+    <!--    SWIPER    -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <!--    JS    -->
     <script src="SASS/JS/theme.js"></script>
-    <script src="SASS/JS/captcha_v3.js"></script>
 
     <!--    CAPTCHA V3    -->
+    <script src="SASS/JS/captcha_v3.js"></script>
     <?php
         if ($_SERVER["HTTP_HOST"] == __SERVER_DOMAIN_NAME__)
             echo '<script src="https://www.google.com/recaptcha/api.js"></script>';
