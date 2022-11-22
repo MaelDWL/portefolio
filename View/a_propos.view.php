@@ -285,4 +285,48 @@
             </li>
         </ul>
     </div>
+
+    <div id="formations" class="swiper">
+<!--        <h1 class="title">Formations</h1>-->
+
+        <div class="timeline">
+            <!-- Swiper main container -->
+            <div class="swiper-container">
+                <!-- wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" data-year="2020" style="background-image: url(https://unsplash.it/1920/500?image=11)">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2020</span>
+                            <h1 class="timeline-title">Bac STI2D</h1>
+                            <p class="timeline-text">
+                                Lycée Gustave Monod Enghien-les-Bains, France (95)<br>
+                                Option Système informatique Numérique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" data-year="2021" style="background-image: url(https://unsplash.it/1920/500?image=12)">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2021 - En cours</span>
+                            <h1 class="timeline-title">BTS SIO SLAM</h1>
+                            <p class="timeline-text">
+                                EESIE-IT Pontoise, France (95)<br>
+                                Ecole de la CCI Paris Ile de France
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
 </main>
+
+<script type="text/javascript" src="SASS/JS/swiper.js"></script>
