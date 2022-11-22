@@ -4,6 +4,8 @@
 {
 	color: var(--color-font);
 
+	#a-propos > #presentation
+
 	& > #presentation,
 	& > #language-skills,
 	& > #software-skills,
@@ -407,6 +409,6 @@
 
 	& > #formations
 	{
-
+		border-radius: 7px;
 	}
 }

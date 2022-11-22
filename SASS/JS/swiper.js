@@ -2,6 +2,7 @@ const swiper = new Swiper('.timeline .swiper-container', {
 	direction: 'vertical',
 	loop: false,
 	speed: 1600,
+	spaceBetween: 5,
 
 	// Pagination
 	pagination: {
