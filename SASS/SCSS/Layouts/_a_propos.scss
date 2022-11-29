@@ -4,12 +4,11 @@
 {
 	color: var(--color-font);
 
-	#a-propos > #presentation
-
 	& > #presentation,
 	& > #language-skills,
 	& > #software-skills,
-	& > #certifications
+	& > #certifications,
+	& > #formation
 	{
 		margin-bottom: 60px;
 		padding: 30px 20px 10px;
@@ -407,7 +406,7 @@
 		}
 	}
 
-	& > #formations
+	& > #formation > .swiper
 	{
 		border-radius: 7px;
 	}
