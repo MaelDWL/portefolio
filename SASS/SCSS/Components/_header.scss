@@ -1,11 +1,15 @@
 @use "../Abstracts" as *;
 
+/* Mobile devices [320px -> 479px] */
 .menu
 {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 3;
+
+	width: 100%;
+	box-sizing: border-box;
 
     & > #trigger-menu
     {
@@ -147,6 +151,9 @@
     left: 0;
     z-index: 2;
 
+	width: 100%;
+	box-sizing: border-box;
+
     background: var(--color-primary);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
@@ -192,26 +199,19 @@
     display: none;
 }
 
-/* [640px -> 767] */
-@media only screen and (min-width: 640px)
+/* Tablets [480px -> 767px] */
+@media only screen and (min-width: 480px)
 {
 
 }
 
-
-/* [768px -> 830] */
+/* Laptop [768px -> 1023px] */
 @media only screen and (min-width: 768px)
 {
 
 }
 
-/* [830 -> 1023] */
-@media only screen and (min-width: 830px)
-{
-
-}
-
-/* [1024 -> infinite] */
+/* Desktop [1024px -> infinite] */
 @media only screen and (min-width: 1024px)
 {
     .menu
@@ -231,11 +231,11 @@
             position: relative;
             display: block;
 
-            min-width: 160px;
+			width: 100%;
 
             color: var(--color-font);
             font-size: 1.2rem;
-            text-align: center;
+            text-align: left;
             font-family: "Montserrat", sans-serif;
             text-decoration: none;
         }

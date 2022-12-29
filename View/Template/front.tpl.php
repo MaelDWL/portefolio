@@ -40,7 +40,7 @@
     <nav class="menu">
         <input id="trigger-menu" type="checkbox">
 
-        <a href="accueil" class="name-menu">Mael DEWULF</a>
+        <a href="accueil" class="name-menu">Mael DEWULF | <span class="highlight">BSA-Informatique</span></a>
 
         <ul>
             <div class="parent-menu-ctn">

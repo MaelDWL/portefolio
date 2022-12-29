@@ -1,0 +1,22 @@
+@use "../Abstracts" as *;
+
+.card
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 20px;
+
+	& > .icn
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+}

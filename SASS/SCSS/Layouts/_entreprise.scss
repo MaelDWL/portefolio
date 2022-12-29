@@ -1,0 +1,55 @@
+@use "../Abstracts" as *;
+
+#entreprise
+{
+	color: var(--color-font);
+
+	& hr
+	{
+		border: solid 1.5px;
+		border-radius: 50px;
+	}
+
+	& .paragraph-section
+	{
+		display: flex;
+		flex-direction: row;
+
+		margin: 20px 0;
+
+		& > i
+		{
+			padding-right: 20px;
+		}
+	}
+
+	& > #bsa-head-office
+	{
+		& > .bsa-services
+		{
+			& p
+			{
+				text-align: center;
+			}
+
+			& ul
+			{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				width: 100%;
+				padding: 0;
+
+				& > .card
+				{
+					width: 33%;
+					min-width: 150px;
+
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}
