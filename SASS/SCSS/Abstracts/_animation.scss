@@ -39,7 +39,21 @@
 	from {
 		background-position-x: 2rem;
 	}
+
 	to {
 		background-position-x: 0;
+	}
+}
+
+@keyframes appear
+{
+	from, 50%
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
 	}
 }

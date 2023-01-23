@@ -64,6 +64,14 @@
     background-position-x: 0;
   }
 }
+@keyframes appear {
+  from, 50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -1323,10 +1331,181 @@ span {
   width: 100%;
   padding: 0;
 }
-#entreprise > #bsa-head-office > .bsa-services ul > .card {
+#entreprise > #bsa-head-office > .bsa-services ul > .outer-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 33%;
   min-width: 150px;
+  margin: 10px 0;
   box-sizing: border-box;
+}
+#entreprise > #bsa-head-office > .bsa-services ul > .outer-card > .card {
+  width: 150px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+#entreprise > #bsa-head-office > .bsa-services ul > .outer-card > .card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#realisations_professionnelles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#realisations_professionnelles > .filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 30px;
+  padding: 5px;
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+#realisations_professionnelles > .filter-container > .filter {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+#realisations_professionnelles > .filter-container > .filter > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+#realisations_professionnelles > .filter-container > .filter > li > svg {
+  height: 1.4rem;
+}
+#realisations_professionnelles > .filter-container > .filter > li > svg:hover {
+  cursor: pointer;
+}
+#realisations_professionnelles > .filter-container > .filter > li > span {
+  padding: 3px 5px;
+  margin: 0 2px;
+  color: var(--color-font);
+  border-radius: 5px;
+  border: solid 2px #2f3542;
+  font-size: 0.8rem;
+}
+#realisations_professionnelles > .filter-container > .filter > li > span:hover {
+  cursor: pointer;
+}
+#realisations_professionnelles > .filter-container > .filter > .separated:after {
+  content: "";
+  display: block;
+  height: 0.8rem;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-right: solid 2px #2f3542;
+}
+#realisations_professionnelles > .filter-container > .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px 8px;
+  margin-left: 10px;
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+#realisations_professionnelles > .filter-container > .search-bar > input {
+  width: 250px;
+  height: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--color-font);
+}
+#realisations_professionnelles > .filter-container > .search-bar > input:focus {
+  outline: none;
+}
+#realisations_professionnelles > .filter-container > .search-bar > i {
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+}
+#realisations_professionnelles > .project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+#realisations_professionnelles > .project-list > .card-offset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 33%;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card {
+  position: relative;
+  transition: 0.3s;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card:hover {
+  transition: 0.3s;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card:hover > .opacity-card {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 300px;
+  background: #2f3542;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card:hover > .logo-card {
+  top: 30%;
+  transform: translateY(-70%);
+  transition: 0.3s;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card:hover > .description-card {
+  opacity: 1;
+  animation: appear 0.6s ease-in-out;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card > .bg-card {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card > .opacity-card {
+  transition: 0.3s;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card > .logo-card {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  max-width: 180px;
+  max-height: 60px;
+  transition: 0.3s;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card > .description-card {
+  position: absolute;
+  top: 40%;
+  border-top: solid 2px #fff;
+  text-align: center;
+  opacity: 0;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card > .description-card > h1 {
+  display: block;
+  width: 160px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#realisations_professionnelles > .project-list > .card-offset > .card > .description-card > p {
+  display: block;
+  width: 160px;
+  color: #fff;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

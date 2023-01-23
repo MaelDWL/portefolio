@@ -152,49 +152,86 @@
             </p>
 
             <ul>
-                <li class="card">
-                    <div class="icn">
-                        <img src="../Public/Entreprise/icn_phone.png">
+                <li class="outer-card">
+                    <div class="card">
+                        <div class="icn">
+                            <img src="../Public/Entreprise/icn_phone.png">
+                        </div>
+                        <span>Téléphonie</span>
                     </div>
-                    <span>Téléphonie</span>
                 </li>
 
-                <li class="card">
-                    <div class="icn">
-                        <img src="../Public/Entreprise/icn_equipment.png">
+                <li class="outer-card">
+                    <div class="card">
+                        <div class="icn">
+                            <img src="../Public/Entreprise/icn_equipment.png">
+                        </div>
+                        <span>Équipements</span>
                     </div>
-                    <span>Équipements</span>
                 </li>
 
-                <li class="card">
-                    <div class="icn">
-                        <img src="../Public/Entreprise/icn_internet_data.png">
+                <li class="outer-card">
+                    <div class="card">
+                        <div class="icn">
+                            <img src="../Public/Entreprise/icn_internet_data.png">
+                        </div>
+                        <span>Internet et Data</span>
                     </div>
-                    <span>Internet et Data</span>
                 </li>
 
-                <li class="card">
-                    <div class="icn">
-                        <img src="../Public/Entreprise/icn_it.png">
+                <li class="outer-card">
+                    <div class="card">
+                        <div class="icn">
+                            <img src="../Public/Entreprise/icn_it.png">
+                        </div>
+                        <span>Informatique</span>
                     </div>
-                    <span>Informatique</span>
                 </li>
 
-                <li class="card">
-                    <div class="icn">
-                        <img src="../Public/Entreprise/icn_office_automation.png">
+                <li class="outer-card">
+                    <div class="card">
+                        <div class="icn">
+                            <img src="../Public/Entreprise/icn_office_automation.png">
+                        </div>
+                        <span>Bureautique</span>
                     </div>
-                    <span>Bureautique</span>
                 </li>
 
-                <li class="card">
-                    <div class="icn">
-                        <img src="../Public/Entreprise/icn_security.png">
+                <li class="outer-card">
+                    <div class="card">
+                        <div class="icn">
+                            <img src="../Public/Entreprise/icn_security.png">
+                        </div>
+                        <span>Sécurité</span>
                     </div>
-                    <span>Sécurité</span>
                 </li>
-
             </ul>
+        </div>
+
+        <div class="content-align-vertically content-sub-section bsa-services">
+            <h1 class="title-section">Relations Professionnelles</h1>
+
+            <p>
+                Bsa a des relation B2B avec des Fournisseurs et Fabricants :
+            </p>
+
+            <p>Fournisseurs</p>
+
+            <div class="paragraph-section">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>
+                    TechData / Bande magnétique / Pca France / Keyo / InMacWebstore / Nordis / BigSool / OVH ...
+                </p>
+            </div>
+
+            <p>Fabricants</p>
+
+            <div class="paragraph-section">
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>
+                    Netgear / Cysco / Tp link / Hp / Dell / Vanérum / Frogi-secure / OVH / Epson ...
+                </p>
+            </div>
         </div>
 
         <div class="content-align-horizontally">
