@@ -23,6 +23,12 @@
         "action": "realisations_professionelles"
     },
 
+	"/academie_heroique":
+	{
+		"controller": "main",
+		"action": "academie_heroique"
+	},
+
     "/veille_technologique":
     {
         "controller": "main", 

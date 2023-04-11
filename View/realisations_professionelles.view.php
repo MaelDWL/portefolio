@@ -23,7 +23,7 @@
 
     <div class="project-list">
         <div class="card-offset">
-            <a class="card" href="#">
+            <a class="card" href="academie_heroique">
                 <img class="bg-card" src="../Public/Projets/bg_auacademy.png">
                 <span class="opacity-card"></span>
                 <img class="logo-card" src="../Public/Projets/logo_auacademy.png">

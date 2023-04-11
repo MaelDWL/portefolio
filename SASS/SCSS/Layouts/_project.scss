@@ -1,0 +1,299 @@
+@use "../Abstracts" as *;
+
+/* Mobile devices [320px -> 479px] */
+.project
+{
+	& > .content-section
+	{
+		& > .nav-project
+		{
+			display: none;
+		}
+
+		& > .project_navigation
+		{
+			& > .title
+			{
+				margin-top: 0;
+			}
+
+			& > nav
+			{
+				display: flex;
+				flex-direction: column;
+				overflow: hidden;
+
+				width: 100%;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > label
+				{
+					width: 100%;
+					padding: 7px 0;
+
+					background: var(--color-primary);
+					color: var(--color-font);
+					border-bottom: 2px solid var(--color-font);
+					font-weight: bold;
+					text-align: center;
+
+					transition: .3s;
+					cursor: pointer;
+
+					&:last-child
+					{
+						border: none;
+					}
+
+					&:hover
+					{
+						background: var(--color-secondary);
+
+						transition: .3s;
+					}
+				}
+			}
+		}
+
+		& > #project-home
+		{
+			display: none;
+
+			margin-top: 20px;
+			padding: 20px;
+
+			border: 2px solid var(--color-font);
+
+			& > h1
+			{
+				& > img
+				{
+					transform: translateY(7px);
+				}
+			}
+
+			& > .showcase
+			{
+				width: 100%;
+				height: auto;
+			}
+
+			& > .specifications
+			{
+				position: relative;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				margin-top: 20px;
+				padding: 10px 20px;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > .title
+				{
+					margin-top: 10px;
+				}
+
+				& > .tag
+				{
+					margin: 10px 10px 0 10px;
+				}
+
+				& > .specifications-list
+				{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					flex-wrap: wrap;
+
+					& > .specification
+					{
+						overflow: hidden;
+
+						width: 75%;
+						margin: 20px;
+						padding: 20px;
+						box-sizing: border-box;
+
+						background: var(--color-primary);
+						border: 2px solid var(--color-font);
+						border-radius: 15px;
+
+						& > p
+						{
+							color: var(--color-font);
+							text-align: center;
+						}
+					}
+				}
+			}
+
+			& > .realisations
+			{
+				margin-top: 20px;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > .realisations-list
+				{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					flex-wrap: wrap;
+
+					& > .realisation
+					{
+						overflow: hidden;
+
+						width: 75%;
+						margin: 20px;
+						padding: 20px;
+						box-sizing: border-box;
+
+						background: var(--color-primary);
+						border: 2px solid var(--color-font);
+						border-radius: 15px;
+
+						& > p
+						{
+							color: var(--color-font);
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Tablets [480px -> 767px] */
+@media only screen and (min-width: 480px)
+{
+
+}
+
+/* Laptop [768px -> 1023px] */
+@media only screen and (min-width: 768px)
+{
+	.project
+	{
+		& > .content-section
+		{
+			& > .project_navigation
+			{
+				& > nav
+				{
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+
+					& > label
+					{
+						border-bottom: none;
+						border-right: 2px solid var(--color-font);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Desktop [1024px -> infinite] */
+@media only screen and (min-width: 1024px)
+{
+	.project
+	{
+		& > .content-section
+		{
+			& > #project-home
+			{
+				& > .specifications
+				{
+					& > .title
+					{
+						margin-top: 10px;
+					}
+
+					& > .tag
+					{
+						position: absolute;
+						left: 0;
+					}
+
+					& > .specifications-list
+					{
+						justify-content: space-around;
+
+						& > .specification
+						{
+							overflow: hidden;
+
+							width: 44%;
+
+							background: var(--color-primary);
+							border: 2px solid var(--color-font);
+							border-radius: 15px;
+						}
+
+						& > .documents
+						{
+							& > .documents-list
+							{
+								display: flex;
+								flex-direction: row;
+								justify-content: center;
+
+								& > .file
+								{
+									display: flex;
+									flex-direction: column;
+									justify-content: center;
+									align-items: center;
+								}
+							}
+						}
+					}
+				}
+
+				& > .realisations
+				{
+					& > .realisations-list
+					{
+						justify-content: space-around;
+
+						& > .realisation
+						{
+							overflow: hidden;
+
+							width: 44%;
+
+							background: var(--color-primary);
+							border: 2px solid var(--color-font);
+							border-radius: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#nav-project-home:checked ~ #project-home,
+#nav-project-manage:checked ~ #project-manage,
+#nav-project-display:checked ~ #project-display
+{
+	display: block;
+}
+
+#nav-project-home:checked ~ .project_navigation #nav-label-project-home,
+#nav-project-manage:checked ~ .project_navigation #nav-label-project-manage,
+#nav-project-display:checked ~ .project_navigation #nav-label-project-display
+{
+	background: var(--color-secondary);
+}

@@ -22,6 +22,11 @@ class Main
         $view = new View("realisations_professionelles","front");
     }
 
+	public function academie_heroique()
+	{
+		$view = new View("academie_heroique","front");
+	}
+
     public function veille_technologique() 
     {
         $view = new View("veille_technologique","front");

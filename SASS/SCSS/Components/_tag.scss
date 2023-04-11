@@ -1,0 +1,15 @@
+@use "../Abstracts" as *;
+
+.tag
+{
+	padding: 5px 25px;
+	border-radius: 12px;
+	font-size: .7rem;
+
+	&-end-project
+	{
+		background: $green;
+		color: $white;
+		font-weight: bold;
+	}
+}
