@@ -56,7 +56,7 @@
 
                         <div class="documents-list">
                             <a class="file" href="#">
-                                <img src="/SASS/Images/file.png">
+                                <i class="fa-solid fa-file-lines"></i>
                                 <label>Cahier des charges</label>
                             </a>
                         </div>
@@ -87,6 +87,122 @@
 
                     <div class="realisation testing-phase">
                         <h3 class="title title-secondary">Phase de Test</h3>
+
+                        <div class="phase-list">
+                            <div class="phase">
+                                <div class="phase-step">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                                    <span>Tests unitaires</span>
+                                </div>
+
+                                <label class="phase-process">Réalisation de test pour chaque composants du code</label>
+                            </div>
+
+                            <div class="phase">
+                                <div class="phase-step">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>Tests utilisateurs</span>
+                                </div>
+
+                                <label class="phase-process">Demande de feedback à un utilisateur pour adapter le code par la suite</label>
+                            </div>
+
+                            <div class="phase">
+                                <div class="phase-step">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i class="fa-solid fa-car-side"></i>
+                                    <span>Tests fonctionnels</span>
+                                </div>
+
+                                <label class="phase-process">Vérification du script par rapport au cahier des charges</label>
+                            </div>
+
+                            <div class="phase">
+                                <div class="phase-step">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i class="fa-regular fa-copy"></i>
+                                    <span>Tests d'intégration</span>
+                                </div>
+
+                                <label class="phase-process">Vérification pour que chaque parties du code fonctionnent ensembles</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="project-manage">
+            <h1 class="title title-project">ACADÉMIE - HÉROIQUE <img src="/SASS/Images/checked.png"></h1>
+
+            <!-- RESSOURCES -->
+            <div class="ressources">
+                <h2 class="title title-secondary">Ressources numériques</h2>
+
+                <div class="ressources-list">
+                    <div class="ressource">
+                        <h3 class="title title-secondary">Technologies</h3>
+
+                        <div class="technology-list">
+                            <div class="technology">
+                                <img class="skill-icn" src="/SASS/Images/python.png">
+                                <label>Python</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ressource">
+                        <h3 class="title title-secondary">Environnement de développement</h3>
+
+                        <div class="technology-list">
+                            <div class="technology">
+                                <img class="skill-icn" src="/SASS/Images/visual_studio_code.png">
+                                <label>Visual Studio</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ressource">
+                        <h3 class="title title-secondary">Système de suivi</h3>
+
+                        <div class="technology-list">
+                            <div class="technology">
+                                <img class="skill-icn" src="/SASS/Images/github.png">
+                                <label>GitHub</label>
+                            </div>
+
+                            <div class="technology discord">
+                                <i class="fa-brands fa-discord"></i>
+                                <label>Discord</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MANAGING PROJECT -->
+            <div class="manages">
+                <h2 class="title title-secondary">Gestion de projet</h2>
+
+                <div class="manages-list">
+                    <div class="manage">
+                        <h3 class="title title-secondary">Gestion temporelle</h3>
+
+                        <!-- TODO : CONTENT-->
+                    </div>
+
+                    <div class="manage">
+                        <h3 class="title title-secondary">Informations supplémentaires</h3>
+
+                        <!-- TODO : CONTENT-->
+                    </div>
+
+                    <div class="manage">
+                        <h3 class="title title-secondary">Compétences</h3>
+
+                        <!-- TODO : CONTENT-->
                     </div>
                 </div>
             </div>

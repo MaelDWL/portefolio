@@ -1,0 +1,147 @@
+@use "../../Abstracts/index" as *;
+
+/* Mobile devices [320px -> 479px] */
+.project
+{
+	& > .content-section
+	{
+		& > #project-manage
+		{
+			display: none;
+
+			margin-top: 20px;
+			padding: 20px;
+
+			border: 2px solid var(--color-font);
+			border-radius: 15px;
+
+			& > h1
+			{
+				& > img
+				{
+					transform: translateY(7px);
+				}
+			}
+
+			& > .ressources
+			{
+				padding: 0 20px;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > .ressources-list
+				{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					& > .ressource
+					{
+						margin: 20px 0;
+
+						background: var(--color-primary);
+						border: 2px solid var(--color-font);
+						border-radius: 15px;
+						box-sizing: border-box;
+
+						& > .technology-list
+						{
+							display: flex;
+							flex-direction: row;
+							justify-content: center;
+							align-items: center;
+							flex-wrap: wrap;
+
+							& > .technology
+							{
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								align-items: center;
+
+								width: 120px;
+								margin: 10px;
+								padding: 10px 0;
+
+								& > img,
+								& > i
+								{
+									display: flex;
+									justify-content: center;
+									align-items: center;
+
+									width: 75%;
+									height: auto;
+
+									margin: auto;
+								}
+
+								& > label
+								{
+									margin-top: 15px;
+
+									color: var(--color-font);
+									text-align: center;
+								}
+							}
+
+							& > .discord
+							{
+								& > i
+								{
+									color: #5865F2;
+									font-size: 5.7rem;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			& > .manages
+			{
+				margin-top: 20px;
+				padding: 0 20px;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > .manages-list
+				{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					& > .manage
+					{
+						margin: 20px 0;
+
+						background: var(--color-primary);
+						border: 2px solid var(--color-font);
+						border-radius: 15px;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Tablets [480px -> 767px] */
+@media only screen and (min-width: 480px)
+{
+
+}
+
+/* Laptop [768px -> 1023px] */
+@media only screen and (min-width: 768px)
+{
+
+}
+
+/* Desktop [1024px -> infinite] */
+@media only screen and (min-width: 1024px)
+{
+
+}

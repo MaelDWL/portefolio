@@ -10,6 +10,7 @@
   --color-border:	#57606f;
   --color-separator:	#747d8c;
   --color-font:	#fff;
+  --color-font-hover:	#bbb;
   --gradient-metal-effect:	linear-gradient(0deg, #747d8c 50%, rgba(255, 255, 255, .1) 50%);
 }
 
@@ -24,6 +25,7 @@
   --color-border:	#747d8c;
   --color-separator:	#2f3542;
   --color-font:	#57606f;
+  --color-font-hover:	#bbb;
   --gradient-metal-effect:	linear-gradient(0deg, rgba(0, 0, 0, .1) 50%, #fff 50%);
 }
 
@@ -1602,6 +1604,7 @@ span {
   margin-top: 20px;
   padding: 20px;
   border: 2px solid var(--color-font);
+  border-radius: 15px;
 }
 .project > .content-section > #project-home > h1 > img {
   transform: translateY(7px);
@@ -1646,6 +1649,36 @@ span {
   color: var(--color-font);
   text-align: center;
 }
+.project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file > i {
+  margin: 20px 0;
+  padding: 0 10px;
+  color: var(--color-font);
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file > label {
+  color: var(--color-font);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file:hover > i, .project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file:hover > label {
+  opacity: 0.4;
+  transition: 0.3s;
+}
 .project > .content-section > #project-home > .realisations {
   margin-top: 20px;
   border: 2px solid var(--color-font);
@@ -1671,6 +1704,46 @@ span {
   color: var(--color-font);
   text-align: center;
 }
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list {
+  display: flex;
+  flex-direction: column;
+}
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list > .phase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list > .phase > .phase-step {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list > .phase > .phase-step > i:first-child {
+  padding: 0 5px;
+  color: var(--color-font);
+  font-size: 1.3rem;
+}
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list > .phase > .phase-step > i:nth-child(2) {
+  padding: 0 5px;
+  color: var(--color-font);
+  font-size: 1.6rem;
+}
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list > .phase > .phase-step > span {
+  color: var(--color-font);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.project > .content-section > #project-home > .realisations > .realisations-list > .testing-phase > .phase-list > .phase > .phase-process {
+  margin: 10px 0;
+  padding: 5px 10px;
+  background: var(--color-secondary);
+  color: var(--color-font);
+  border-radius: 15px;
+  text-align: center;
+}
 
 /* Tablets [480px -> 767px] */
 /* Laptop [768px -> 1023px] */
@@ -1683,6 +1756,14 @@ span {
   .project > .content-section > .project_navigation > nav > label {
     border-bottom: none;
     border-right: 2px solid var(--color-font);
+  }
+  .project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list {
+    align-items: center;
+  }
+  .project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
   }
 }
 /* Desktop [1024px -> infinite] */
@@ -1703,17 +1784,6 @@ span {
     background: var(--color-primary);
     border: 2px solid var(--color-font);
     border-radius: 15px;
-  }
-  .project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .project > .content-section > #project-home > .specifications > .specifications-list > .documents > .documents-list > .file {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .project > .content-section > #project-home > .realisations > .realisations-list {
     justify-content: space-around;
@@ -1737,5 +1807,104 @@ span {
 #nav-project-display:checked ~ .project_navigation #nav-label-project-display {
   background: var(--color-secondary);
 }
+
+/* Mobile devices [320px -> 479px] */
+.project > .content-section > #project-manage {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-manage > h1 > img {
+  transform: translateY(7px);
+}
+.project > .content-section > #project-manage > .ressources {
+  padding: 0 20px;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list > .ressource {
+  margin: 20px 0;
+  background: var(--color-primary);
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list > .ressource > .technology-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list > .ressource > .technology-list > .technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin: 10px;
+  padding: 10px 0;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list > .ressource > .technology-list > .technology > img, .project > .content-section > #project-manage > .ressources > .ressources-list > .ressource > .technology-list > .technology > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list > .ressource > .technology-list > .technology > label {
+  margin-top: 15px;
+  color: var(--color-font);
+  text-align: center;
+}
+.project > .content-section > #project-manage > .ressources > .ressources-list > .ressource > .technology-list > .discord > i {
+  color: #5865F2;
+  font-size: 5.7rem;
+}
+.project > .content-section > #project-manage > .manages {
+  margin-top: 20px;
+  padding: 0 20px;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-manage > .manages > .manages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage {
+  margin: 20px 0;
+  background: var(--color-primary);
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* Tablets [480px -> 767px] */
+/* Laptop [768px -> 1023px] */
+/* Desktop [1024px -> infinite] */
+/* Mobile devices [320px -> 479px] */
+.project > .content-section > #project-display {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-display > h1 > img {
+  transform: translateY(7px);
+}
+
+/* Tablets [480px -> 767px] */
+/* Laptop [768px -> 1023px] */
+/* Desktop [1024px -> infinite] */
 
 /*# sourceMappingURL=style.css.map */
