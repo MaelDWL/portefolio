@@ -62,6 +62,22 @@ p
 	text-justify: auto;
 }
 
+.table
+{
+	display: flex;
+	flex-direction: column;
+
+	& > .table-row
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		width: 100%;
+	}
+}
+
 /* [768px -> 1023] */
 @media only screen and (min-width: 640px)
 {

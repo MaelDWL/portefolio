@@ -119,6 +119,18 @@ p {
   text-justify: auto;
 }
 
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.table > .table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
 /* [768px -> 1023] */
 @media only screen and (min-width: 640px) {
   .main-content {
@@ -1572,7 +1584,7 @@ span {
 /* Laptop [768px -> 1023px] */
 /* Desktop [1024px -> infinite] */
 /* Mobile devices [320px -> 479px] */
-#veille_technologique > .section {
+#veille_technologique .section {
   padding: 20px;
   margin-bottom: 40px;
   box-sizing: border-box;
@@ -1580,80 +1592,174 @@ span {
   border: solid 2px var(--color-font);
   border-radius: 15px;
 }
-#veille_technologique > .section > .row {
+#veille_technologique .section .row {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
 }
-#veille_technologique > .section > .row:last-child {
+#veille_technologique .section .row:last-child {
   margin-bottom: 0;
 }
-#veille_technologique > .section > .row .ctn {
+#veille_technologique .section .row > .table > .table-row {
+  padding: 10px;
+  box-sizing: border-box;
+}
+#veille_technologique .section .row > .table > .table-row > .cell {
+  color: var(--color-font);
+}
+#veille_technologique .section .row > .table > .table-row > i {
+  margin-right: 20px;
+  font-size: 2rem;
+}
+#veille_technologique .ctn {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
   border-radius: 15px;
 }
-#veille_technologique > .section > .row .ctn:last-child {
+#veille_technologique .ctn:last-child {
   margin-bottom: 0;
 }
-#veille_technologique > .section > .row .ctn-vertically {
+#veille_technologique .ctn-vertically {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
-#veille_technologique > .section > .row .ctn-row {
+#veille_technologique .ctn-row {
   flex-direction: row;
 }
-#veille_technologique > .section > .row .ctn-row-center {
+#veille_technologique .ctn-row-center {
   justify-content: center;
 }
-#veille_technologique > .section > .row .ctn-first {
+#veille_technologique .ctn-first {
   margin-right: 0;
 }
-#veille_technologique > .section > .row .ctn-paragraph {
+#veille_technologique .ctn-paragraph {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
   background: var(--color-primary);
   border: solid 2px var(--color-font);
 }
-#veille_technologique > .section > .row .ctn-image {
+#veille_technologique .ctn-image {
   overflow: hidden;
   width: 100%;
   height: 250px;
   background: var(--color-primary);
   border-radius: 15px;
 }
-#veille_technologique > .section > .row .ctn-image-border {
+#veille_technologique .ctn-image-border {
   border: solid 2px var(--color-font);
   border-radius: 15px;
 }
-#veille_technologique > .section > .row .ctn-image > .img {
+#veille_technologique .ctn-image > .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#veille_technologique > .section > .row .ctn-image > .img-contain {
+#veille_technologique .ctn-image > .img-contain {
   object-fit: contain;
 }
-#veille_technologique > .section > .row .ctn > p {
+#veille_technologique .ctn > p {
   width: 100%;
   color: var(--color-font);
   text-align: justify;
 }
-#veille_technologique > .section > .row .ctn > .span {
+#veille_technologique .ctn > .span {
   color: var(--color-font);
   margin-right: 20px;
 }
-#veille_technologique > .section > .row .ctn > .span:last-child {
+#veille_technologique .ctn > .span:last-child {
   margin-right: 0;
+}
+#veille_technologique .card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#veille_technologique .card-list > .card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  padding: 0;
+  margin: 20px;
+  background: var(--color-secondary);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#veille_technologique .card-list > .card > .card-content > .ctn-image {
+  border-radius: 0;
+}
+#veille_technologique .card-list > .card > .card-content > .title {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#veille_technologique .card-list > .card > .card-content > .description {
+  padding: 0 20px;
+  color: var(--color-font);
+  text-align: justify;
+}
+#veille_technologique .card-list > .card > .card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+#veille_technologique .card-list > .card > .card-footer > .card-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+#veille_technologique .card-list > .card > .card-footer > .card-link > a {
+  padding: 10px;
+  background: var(--color-primary);
+  color: var(--color-font);
+  border: solid 1px var(--color-font);
+  border-radius: 7px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#veille_technologique .card-list > .card > .card-footer > .card-link > a:hover, #veille_technologique .card-list > .card > .card-footer > .card-link > a:hover > i {
+  color: var(--color-font-hover);
+  transition: 0.3s;
+}
+#veille_technologique .card-list > .card > .card-footer > .card-link > a > i {
+  margin-left: 5px;
+  color: var(--color-font);
+  transition: 0.3s;
+}
+#veille_technologique .card-list > .card > .card-footer > .card-ref {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background: var(--color-primary);
+  border-top: solid 2px var(--color-font);
+}
+#veille_technologique .card-list > .card > .card-footer > .card-ref > span {
+  padding: 0 5px;
+  color: var(--color-font);
 }
 
 /* Tablets [480px -> 767px] */
 /* Laptop [768px -> 1023px] */
+@media only screen and (min-width: 768px) {
+  #veille_technologique .card-list > .card {
+    width: 450px;
+  }
+}
 /* Desktop [1024px -> infinite] */
 @media only screen and (min-width: 1024px) {
   #veille_technologique > .section > .row {
@@ -1672,6 +1778,9 @@ span {
   #veille_technologique > .section > .row > .ctn-image {
     width: auto;
     height: auto;
+  }
+  #veille_technologique .card-list {
+    justify-content: space-between;
   }
 }
 /* Mobile devices [320px -> 479px] */

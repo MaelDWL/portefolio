@@ -55,7 +55,7 @@
                         <h3 class="title title-secondary">Documents</h3>
 
                         <div class="documents-list">
-                            <a class="file" href="#">
+                            <a class="file" href="#" target="_blank">
                                 <i class="fa-solid fa-file-lines"></i>
                                 <label>Cahier des charges</label>
                             </a>
@@ -219,7 +219,7 @@
                             </div>
 
                             <div class="ctn">
-                                <i class="fa-solid fa-diagram-project"></i>
+                                <i class="fa-solid fa-code-commit"></i>
                                 <span>Projet BTS 1</span>
                             </div>
 
