@@ -121,6 +121,130 @@
 						border: 2px solid var(--color-font);
 						border-radius: 15px;
 						box-sizing: border-box;
+
+						& > .completion-time
+						{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+
+							width: 100%;
+
+							& > .ctn-key-value
+							{
+								display: flex;
+								flex-direction: row;
+
+								& > .key
+								{
+									width: 50%;
+									padding: 0 20px;
+									box-sizing: border-box;
+
+									color: var(--color-font);
+								}
+
+								& > .value
+								{
+									width: 50%;
+									padding: 0 20px;
+									box-sizing: border-box;
+
+									color: var(--color-font);
+									text-align: center;
+								}
+							}
+
+							& > span
+							{
+								width: fit-content;
+								margin: 20px;
+								padding: 10px 20px;
+
+								background: var(--color-secondary);
+								color: var(--color-font);
+								border-radius: 15px;
+								text-align: center;
+							}
+						}
+
+						& > .more-information
+						{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+
+							width: 100%;
+
+							& > .ctn
+							{
+								display: flex;
+								flex-direction: row;
+
+								width: 200px;
+								margin-bottom: 10px;
+
+								& > i
+								{
+									margin-right: 10px;
+									color: var(--color-font);
+								}
+
+								& > span
+								{
+									color: var(--color-font);
+								}
+							}
+
+							& > .source
+							{
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+
+								width: 100%;
+								margin-top: 20px;
+
+								& > .key
+								{
+									color: var(--color-font);
+									font-size: 1.1rem;
+									font-weight: bold;
+									text-align: center;
+								}
+
+								& > .value
+								{
+									width: fit-content;
+									margin: 20px;
+									padding: 10px 20px;
+
+									background: var(--color-secondary);
+									color: var(--color-font);
+									border-radius: 15px;
+									text-align: center;
+								}
+							}
+						}
+
+						& > .skill
+						{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+
+							& > span
+							{
+								width: 200px;
+								padding: 10px 20px;
+								margin-bottom: 20px;
+
+								background: var(--color-secondary);
+								color: var(--color-font);
+								border-radius: 15px;
+								text-align: center;
+							}
+						}
 					}
 				}
 			}

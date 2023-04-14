@@ -22,6 +22,57 @@
 					transform: translateY(7px);
 				}
 			}
+
+			& > .code-snippet
+			{
+				padding: 20px;
+				margin-bottom: 20px;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > .code-snippet-list
+				{
+					display: flex;
+					flex-direction: column;
+
+					& > .snippet
+					{
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+
+						width: 100%;
+						margin-bottom: 20px;
+
+						background: $bg-code-snippet;
+						border: 2px solid var(--color-font);
+						border-radius: 15px;
+					}
+				}
+			}
+
+			& > .project-visual
+			{
+				padding: 20px;
+
+				border: 2px solid var(--color-font);
+				border-radius: 15px;
+
+				& > .ctn-project-visual
+				{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+
+					width: 100%;
+					min-height: 200px;
+
+					background: $bg-code-snippet;
+				}
+			}
 		}
 	}
 }

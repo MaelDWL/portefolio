@@ -65,7 +65,7 @@
             </div>
 
             <div class="realisations">
-                <h2 class="title title-secondary">Cahier des charges</h2>
+                <h2 class="title title-secondary">Réalisation</h2>
 
                 <div class="realisations-list">
                     <div class="realisation condition">
@@ -190,20 +190,85 @@
                     <div class="manage">
                         <h3 class="title title-secondary">Gestion temporelle</h3>
 
-                        <!-- TODO : CONTENT-->
+                        <div class="completion-time">
+                            <div class="ctn-key-value">
+                                <div class="key">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Temps de réalisation :</span>
+                                </div>
+
+                                <p class="value">
+                                    3 semaines
+                                    <br>
+                                    (Du 20 octobre 2022 au 9 novembre 2022)
+                                </p>
+                            </div>
+
+                            <span>Le délais de réalisation a bien été respecté.</span>
+                        </div>
                     </div>
 
                     <div class="manage">
                         <h3 class="title title-secondary">Informations supplémentaires</h3>
 
-                        <!-- TODO : CONTENT-->
+                        <div class="more-information">
+                            <div class="ctn">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Projet en individuel</span>
+                            </div>
+
+                            <div class="ctn">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>Projet BTS 1</span>
+                            </div>
+
+                            <div class="source">
+                                <span class="key">Source :</span>
+                                <span class="value">Mickaël Hubert - Exercice Python Billeterie </span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="manage">
                         <h3 class="title title-secondary">Compétences</h3>
 
-                        <!-- TODO : CONTENT-->
+                        <div class="skill">
+                            <span>Travail en autonomie</span>
+                            <span>Script Python</span>
+                            <span>Gestion de temps</span>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="project-display">
+            <h1 class="title title-project">ACADÉMIE - HÉROIQUE <img src="/SASS/Images/checked.png"></h1>
+
+            <div class="code-snippet">
+                <h2 class="title title-secondary">Extrait de code</h2>
+
+                <div class="code-snippet-list">
+                    <div class="snippet">
+                        <img src="../Public/Projets/snippet_auacademy_1.png">
+                    </div>
+
+                    <div class="snippet">
+                        <img src="../Public/Projets/snippet_auacademy_2.png">
+                    </div>
+
+                    <div class="snippet">
+                        <img src="../Public/Projets/snippet_auacademy_3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-visual">
+                <h2 class="title title-secondary">Visuel du projet</h2>
+
+                <div class="ctn-project-visual">
+
                 </div>
             </div>
         </div>

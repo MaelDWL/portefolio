@@ -1,0 +1,176 @@
+@use "../Abstracts/index" as *;
+
+/* Mobile devices [320px -> 479px] */
+#veille_technologique
+{
+	& > .section
+	{
+		padding: 20px;
+		margin-bottom: 40px;
+		box-sizing: border-box;
+
+		background: var(--color-secondary);
+		border: solid 2px var(--color-font);
+		border-radius: 15px;
+
+		& > .row
+		{
+			display: flex;
+			flex-direction: column;
+
+			width: 100%;
+			margin-bottom: 20px;
+
+			&:last-child
+			{
+				margin-bottom: 0;
+			}
+
+			.ctn
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				margin-bottom: 20px;
+
+				border-radius: 15px;
+
+				&:last-child
+				{
+					margin-bottom: 0;
+				}
+
+				&-vertically
+				{
+					flex-direction: column;
+					justify-content: space-between;
+
+					width: 100%;
+				}
+
+				&-row
+				{
+					flex-direction: row;
+
+					&-center
+					{
+						justify-content: center;
+					}
+				}
+
+				&-first
+				{
+					margin-right: 0;
+				}
+
+				&-paragraph
+				{
+					width: 100%;
+					padding: 20px;
+					box-sizing: border-box;
+
+					background: var(--color-primary);
+					border: solid 2px var(--color-font);
+				}
+
+				&-image
+				{
+					overflow: hidden;
+
+					width: 100%;
+					height: 250px;
+
+					background: var(--color-primary);
+					border-radius: 15px;
+
+					&-border
+					{
+						border: solid 2px var(--color-font);
+						border-radius: 15px;
+					}
+
+					& > .img
+					{
+						width: 100%;
+						height: 100%;
+
+						object-fit: cover;
+
+						&-contain
+						{
+							object-fit: contain;
+						}
+					}
+				}
+
+				& > p
+				{
+					width: 100%;
+					color: var(--color-font);
+					text-align: justify;
+				}
+
+				& > .span
+				{
+					color: var(--color-font);
+					margin-right: 20px;
+
+					&:last-child
+					{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Tablets [480px -> 767px] */
+@media only screen and (min-width: 480px)
+{
+
+}
+
+/* Laptop [768px -> 1023px] */
+@media only screen and (min-width: 768px)
+{
+
+}
+
+/* Desktop [1024px -> infinite] */
+@media only screen and (min-width: 1024px)
+{
+	#veille_technologique
+	{
+		& > .section
+		{
+			& > .row
+			{
+				display: flex;
+				flex-direction: row;
+
+				& > .ctn
+				{
+					margin-bottom: 0;
+
+					&-first
+					{
+						margin-right: 20px;
+					}
+
+					&-paragraph-75
+					{
+						width: 125%;
+					}
+
+					&-image
+					{
+						width: auto;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}

@@ -913,6 +913,11 @@ span {
   color: #fff;
   font-weight: bold;
 }
+.tag-in-progress-project {
+  background: #CBB919;
+  color: #fff;
+  font-weight: bold;
+}
 
 /* Mobile devices [320px -> 479px] */
 #home {
@@ -1567,6 +1572,109 @@ span {
 /* Laptop [768px -> 1023px] */
 /* Desktop [1024px -> infinite] */
 /* Mobile devices [320px -> 479px] */
+#veille_technologique > .section {
+  padding: 20px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  background: var(--color-secondary);
+  border: solid 2px var(--color-font);
+  border-radius: 15px;
+}
+#veille_technologique > .section > .row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#veille_technologique > .section > .row:last-child {
+  margin-bottom: 0;
+}
+#veille_technologique > .section > .row .ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+#veille_technologique > .section > .row .ctn:last-child {
+  margin-bottom: 0;
+}
+#veille_technologique > .section > .row .ctn-vertically {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+#veille_technologique > .section > .row .ctn-row {
+  flex-direction: row;
+}
+#veille_technologique > .section > .row .ctn-row-center {
+  justify-content: center;
+}
+#veille_technologique > .section > .row .ctn-first {
+  margin-right: 0;
+}
+#veille_technologique > .section > .row .ctn-paragraph {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--color-primary);
+  border: solid 2px var(--color-font);
+}
+#veille_technologique > .section > .row .ctn-image {
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  background: var(--color-primary);
+  border-radius: 15px;
+}
+#veille_technologique > .section > .row .ctn-image-border {
+  border: solid 2px var(--color-font);
+  border-radius: 15px;
+}
+#veille_technologique > .section > .row .ctn-image > .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#veille_technologique > .section > .row .ctn-image > .img-contain {
+  object-fit: contain;
+}
+#veille_technologique > .section > .row .ctn > p {
+  width: 100%;
+  color: var(--color-font);
+  text-align: justify;
+}
+#veille_technologique > .section > .row .ctn > .span {
+  color: var(--color-font);
+  margin-right: 20px;
+}
+#veille_technologique > .section > .row .ctn > .span:last-child {
+  margin-right: 0;
+}
+
+/* Tablets [480px -> 767px] */
+/* Laptop [768px -> 1023px] */
+/* Desktop [1024px -> infinite] */
+@media only screen and (min-width: 1024px) {
+  #veille_technologique > .section > .row {
+    display: flex;
+    flex-direction: row;
+  }
+  #veille_technologique > .section > .row > .ctn {
+    margin-bottom: 0;
+  }
+  #veille_technologique > .section > .row > .ctn-first {
+    margin-right: 20px;
+  }
+  #veille_technologique > .section > .row > .ctn-paragraph-75 {
+    width: 125%;
+  }
+  #veille_technologique > .section > .row > .ctn-image {
+    width: auto;
+    height: auto;
+  }
+}
+/* Mobile devices [320px -> 479px] */
 .project > .content-section > .nav-project {
   display: none;
 }
@@ -1887,6 +1995,93 @@ span {
   border-radius: 15px;
   box-sizing: border-box;
 }
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .completion-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .completion-time > .ctn-key-value {
+  display: flex;
+  flex-direction: row;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .completion-time > .ctn-key-value > .key {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: var(--color-font);
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .completion-time > .ctn-key-value > .value {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: var(--color-font);
+  text-align: center;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .completion-time > span {
+  width: fit-content;
+  margin: 20px;
+  padding: 10px 20px;
+  background: var(--color-secondary);
+  color: var(--color-font);
+  border-radius: 15px;
+  text-align: center;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information > .ctn {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information > .ctn > i {
+  margin-right: 10px;
+  color: var(--color-font);
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information > .ctn > span {
+  color: var(--color-font);
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information > .source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information > .source > .key {
+  color: var(--color-font);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .more-information > .source > .value {
+  width: fit-content;
+  margin: 20px;
+  padding: 10px 20px;
+  background: var(--color-secondary);
+  color: var(--color-font);
+  border-radius: 15px;
+  text-align: center;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project > .content-section > #project-manage > .manages > .manages-list > .manage > .skill > span {
+  width: 200px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: var(--color-secondary);
+  color: var(--color-font);
+  border-radius: 15px;
+  text-align: center;
+}
 
 /* Tablets [480px -> 767px] */
 /* Laptop [768px -> 1023px] */
@@ -1901,6 +2096,41 @@ span {
 }
 .project > .content-section > #project-display > h1 > img {
   transform: translateY(7px);
+}
+.project > .content-section > #project-display > .code-snippet {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-display > .code-snippet > .code-snippet-list {
+  display: flex;
+  flex-direction: column;
+}
+.project > .content-section > #project-display > .code-snippet > .code-snippet-list > .snippet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background: #1e1e1e;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-display > .project-visual {
+  padding: 20px;
+  border: 2px solid var(--color-font);
+  border-radius: 15px;
+}
+.project > .content-section > #project-display > .project-visual > .ctn-project-visual {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+  background: #1e1e1e;
 }
 
 /* Tablets [480px -> 767px] */
